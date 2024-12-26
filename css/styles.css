@@ -1,0 +1,7 @@
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background: url('../images/moringa-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
