@@ -14,57 +14,126 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Adjusted for better responsiveness */
     margin: 0;
+    font-weight: normal; /* Unbold the header */
 }
 
 header p {
     font-size: 1.25rem;
+    margin-top: 1rem;
+    color: white; /* White text */
+    padding: 0 1rem; /* Add space around text */
 }
 
-section {
-    padding: 2rem 0;
+header a {
+    color: #b0b0b0; /* Lighter grey for the link */
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
+section {
+    padding: 2rem 0;
+}
+
+#about, #call-to-action {
+    text-align: center;
+    margin-top: 2rem; /* To add some spacing between sections */
+}
+
+/* Adjust the Get in Touch and Our Mission sections */
+#about {
+    margin-top: 2rem;
+}
+
+#call-to-action {
+    text-align: center;
+}
+
+#call-to-action a.button {
+    background-color: #3c763d;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+#call-to-action a.button:hover {
+    background-color: #2b5e31;
+}
+
+/* Top Navigation Section */
+nav {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3c763d; /* Moringa green text color */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:first-child {
+    margin-left: 1rem; /* Indent the Moringa Education link */
+}
+
+/* Footer Styling */
 footer {
     background-color: #f8f9fa;
     color: #6c757d;
     text-align: center;
     padding: 1rem 0;
+    font-size: 0.9rem;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1rem;
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.navbar {
-    margin-bottom: 2rem;
+footer ul li {
+    display: inline;
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+footer ul a {
+    text-decoration: none;
+    color: #6c757d;
 }
 
-.navbar-nav .nav-link {
-    font-size: 1rem;
-}
-
-/* Customizing the buttons */
-.btn-primary {
-    background-color: #3c763d;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #2b5e31;
+footer ul a:hover {
+    text-decoration: underline;
 }
 
 /* Mobile-first adjustments */
@@ -77,74 +146,8 @@ footer p {
         font-size: 1rem;
     }
 
-    .navbar-nav {
+    footer ul {
         flex-direction: column;
+        gap: 0.5rem;
     }
-
-    .navbar-nav .nav-link {
-        font-size: 1.2rem;
-    }
-
-    /* Reduce heading sizes on smaller screens */
-    article h1 {
-        font-size: 2rem; 
-    }
-
-    article h2 {
-        font-size: 1.8rem; 
-    }
-
-    #about h2 {
-        font-size: 2rem; 
-    }
-}
-
-/* Article Styling */
-article {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem; 
-}
-
-article h1 {
-    font-size: 2rem; /* Adjust heading size as needed */
-    margin-bottom: 1.5rem;
-}
-
-article h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-article p {
-    font-size: 1rem;
-    line-height: 1.6; 
-}
-
-article ul {
-    margin-left: 1.5rem; /* Adjust list indentation as needed */
-} 
-
-/* Remove unintended bolding */
-article h3,
-article ul,
-article p {
-    font-weight: normal; 
-}
-
-/* About Section Styling */
-#about { /* Assuming your about section has an ID of "about" */
-    max-width: 800px;
-    margin: 0 auto; 
-    padding: 2rem; 
-}
-
-#about h2 {
-    font-size: 2.5rem; 
-    margin-bottom: 1.5rem;
-}
-
-#about p {
-    font-size: 1rem;
-    line-height: 1.6;
 }
