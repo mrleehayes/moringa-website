@@ -46,23 +46,14 @@
 
     <section>
         <div class="container">
-            <!-- Netlify Forms setup -->
-            <form action="/thank-you" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Your Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Your Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Your Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-moringa-green">Submit</button>
-            </form>            
+            <form action="https://formsubmit.co/leehazee@aol.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="hidden" name="_next" value="https://moringaeducation.org/thank-you">
+                <input type="hidden" name="_subject" value="New Message from Contact Form">
+                <button type="submit">Send Message</button>
+              </form>                         
         </div>
     </section>
 
