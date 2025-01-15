@@ -134,6 +134,78 @@ footer ul a:hover {
         flex-direction: column;
         gap: 0.5rem;
     }
+
+    /* Adjust blog card layout for small screens */
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Hero Section Styling */
+#hero-section {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+#hero-section h2 {
+    font-size: 2.5rem;
+    color: #3c763d;
+}
+
+#hero-section p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #6c757d;
+}
+
+/* Blog List Styling */
+#blog-list .card {
+    border: none;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#blog-list .card-img-top {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+#blog-list .card-body {
+    padding: 1.5rem;
+}
+
+#blog-list .card-title {
+    font-size: 1.5rem;
+    color: #3c763d;
+}
+
+#blog-list .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Custom button styling for blog and forms */
+form button, .btn-moringa-green {
+    background-color: #3c763d; /* Moringa green */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover, .btn-moringa-green:hover {
+    background-color: #2b5e31; /* Darker Moringa green on hover */
+}
+
+form button {
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 /* Form styling to match the site */
@@ -171,23 +243,14 @@ form .form-control:focus {
     box-shadow: 0 0 5px rgba(60, 118, 61, 0.3);
 }
 
-/* Custom button styling */
-form button, .btn-moringa-green {
-    background-color: #3c763d; /* Moringa green */
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
+/* Alert box styling */
+#coming-soon-message {
+    background-color: #fff3cd; /* Light yellow */
+    color: #856404; /* Dark brown-yellow for text */
     font-size: 1rem;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover, .btn-moringa-green:hover {
-    background-color: #2b5e31; /* Darker Moringa green on hover */
-}
-
-form button {
-    display: inline-block;
-    margin-top: 1rem;
+    border: 1px solid #ffeeba;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 600px;
 }
