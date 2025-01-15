@@ -4,6 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Added global box-sizing */
 }
 
 header {
@@ -50,15 +51,6 @@ section {
     margin-top: 2rem; /* To add some spacing between sections */
 }
 
-/* Adjust the Get in Touch and Our Mission sections */
-#about {
-    margin-top: 2rem;
-}
-
-#call-to-action {
-    text-align: center;
-}
-
 #call-to-action a.button {
     background-color: #3c763d;
     color: white;
@@ -88,10 +80,6 @@ nav ul {
     gap: 1rem;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     text-decoration: none;
     color: #3c763d; /* Moringa green text color */
@@ -99,10 +87,6 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-}
-
-nav ul li:first-child {
-    margin-left: 1rem; /* Indent the Moringa Education link */
 }
 
 /* Footer Styling */
@@ -179,7 +163,6 @@ form .form-control {
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
 form .form-control:focus {
@@ -188,8 +171,8 @@ form .form-control:focus {
     box-shadow: 0 0 5px rgba(60, 118, 61, 0.3);
 }
 
-/* Custom button styling to match the homepage */
-form button {
+/* Custom button styling */
+form button, .btn-moringa-green {
     background-color: #3c763d; /* Moringa green */
     color: white;
     border: none;
@@ -200,27 +183,10 @@ form button {
     transition: background-color 0.3s ease;
 }
 
-form button:hover {
+form button:hover, .btn-moringa-green:hover {
     background-color: #2b5e31; /* Darker Moringa green on hover */
 }
 
-/* Ensuring that the button with 'btn-moringa-green' matches the homepage button */
-.btn-moringa-green {
-    background-color: #3c763d; /* Moringa green */
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn-moringa-green:hover {
-    background-color: #2b5e31; /* Darker Moringa green on hover */
-}
-
-/* Optional: to ensure it is well-aligned within the form */
 form button {
     display: inline-block;
     margin-top: 1rem;
