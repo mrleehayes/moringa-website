@@ -23,7 +23,7 @@ header h1 {
 header p {
     font-size: 1.25rem;
     margin-top: 1rem;
-    color: white; /* White text */
+    color: whitesmoke; /* White text */
     padding: 0 1rem; /* Add space around text */
 }
 
@@ -150,7 +150,7 @@ footer ul a:hover {
 
 #hero-section h2 {
     font-size: 2.5rem;
-    color: #3c763d;
+    color: black;
 }
 
 #hero-section p {
