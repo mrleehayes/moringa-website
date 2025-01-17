@@ -1,4 +1,4 @@
-/* Updated General Styling */
+/* General Styling */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -64,12 +64,12 @@ nav ul li a:hover {
     border-bottom: 3px solid #3c763d;
 }
 
-#hero-section h2 {
+#hero-section h2, section h2 {
     font-size: 1.8rem;
-    color: rgb(50, 50, 50);
+    color: #3c763d;
 }
 
-#hero-section p {
+#hero-section p, section p {
     font-size: 1.1rem;
     margin-top: 0.5rem;
     color: #555;
@@ -81,20 +81,6 @@ section {
     text-align: center;
 }
 
-section h2 {
-    font-size: 1.8rem;
-    color: #3c763d;
-    margin-bottom: 0.5rem;
-}
-
-section p {
-    font-size: 1rem;
-    color: #555;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-/* What We Offer UL Styling */
 section ul {
     list-style: none; /* Remove bullet points */
     padding: 0;
@@ -216,7 +202,7 @@ footer ul a:hover {
     color: #6c757d;
 }
 
-/* Custom button styling for blog and forms */
+/* Custom Button Styling for Forms */
 form button, .btn-moringa-green {
     background-color: #3c763d; /* Moringa green */
     color: white;
@@ -237,7 +223,7 @@ form button {
     margin-top: 1rem;
 }
 
-/* Form styling to match the site */
+/* Form Styling */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -272,7 +258,7 @@ form .form-control:focus {
     box-shadow: 0 0 5px rgba(60, 118, 61, 0.3);
 }
 
-/* Alert box styling */
+/* Alert Box Styling */
 #coming-soon-message {
     background-color: #fff3cd; /* Light yellow */
     color: #856404; /* Dark brown-yellow for text */
