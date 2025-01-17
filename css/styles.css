@@ -19,6 +19,7 @@ header {
 header h1 {
     font-size: 2rem;
     margin: 0;
+    color: white !important; /* Ensures it overrides other styles */
     font-weight: bold;
 }
 
@@ -79,6 +80,7 @@ nav ul li a:hover {
 section {
     padding: 1.5rem 1rem; /* Reduced spacing */
     text-align: center;
+    background-color: #f1f1f1; /* Slightly darker background for better contrast */
 }
 
 section ul {
@@ -118,13 +120,13 @@ section ul li a:hover {
 }
 
 #call-to-action a.button:hover {
-    background-color: #285528;
+    background-color: #2b5e31; /* Darker shade for better hover contrast */
 }
 
 /* Footer Styling */
 footer {
     background-color: #f8f9fa;
-    color: #6c757d;
+    color: #333;
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
@@ -145,7 +147,7 @@ footer ul li {
 
 footer ul a {
     text-decoration: none;
-    color: #6c757d;
+    color: #333;
 }
 
 footer ul a:hover {
@@ -215,7 +217,7 @@ form button, .btn-moringa-green {
 }
 
 form button:hover, .btn-moringa-green:hover {
-    background-color: #2b5e31; /* Darker Moringa green on hover */
+    background-color: #2b5e31; /* Darker shade for better hover contrast */
 }
 
 form button {
@@ -258,14 +260,3 @@ form .form-control:focus {
     box-shadow: 0 0 5px rgba(60, 118, 61, 0.3);
 }
 
-/* Alert Box Styling */
-#coming-soon-message {
-    background-color: #fff3cd; /* Light yellow */
-    color: #856404; /* Dark brown-yellow for text */
-    font-size: 1rem;
-    border: 1px solid #ffeeba;
-    margin: 2rem auto;
-    padding: 1rem;
-    border-radius: 5px;
-    max-width: 600px;
-}
