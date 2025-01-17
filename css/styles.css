@@ -166,8 +166,13 @@ footer ul a:hover {
     }
 
     footer ul {
-        flex-direction: column;
-        gap: 0.5rem;
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    
+    footer li {
+        margin: 5px; 
     }
 
     /* Adjust blog card layout for small screens */
