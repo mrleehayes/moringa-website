@@ -58,19 +58,19 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-#hero-section {
+.hero-section {
     background-color: #e6f4e6;
     padding: 2rem 1rem;
     text-align: center;
     border-bottom: 3px solid #3c763d;
 }
 
-#hero-section h2, section h2 {
+.hero-section h2, section h2 {
     font-size: 1.8rem;
     color: #3c763d;
 }
 
-#hero-section p, section p {
+.hero-section p, section p {
     font-size: 1.1rem;
     margin-top: 0.5rem;
     color: #555;
@@ -208,6 +208,40 @@ footer p {
     font-size: 1rem;
     color: #6c757d;
 }
+
+/* Recipe List Styling */
+.recipe-list {
+    margin-top: 2rem; /* Add some spacing above the recipe list */
+  }
+  
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    grid-gap: 2rem; /* Space between grid items */
+  }
+  
+  .recipe-item {
+    border: none; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .recipe-item img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .recipe-item h3 {
+    font-size: 1.5rem;
+    color: #3c763d;
+    margin: 1rem 0;
+  }
+  
+  .recipe-item a {
+    text-decoration: none;
+    color: #3c763d; 
+  }
 
 /* Custom Button Styling for Forms */
 form button, .btn-moringa-green {
