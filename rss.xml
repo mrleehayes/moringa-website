@@ -3,13 +3,8 @@
     <channel>
         <title>Moringa Education</title>
         <link>https://www.moringaeducation.org</link>
-        <description>Educating families worldwide on the benefits of moringa and healthy eating.</description>
-        <language>en-us</language>
-        <pubDate>Wed, 15 Jan 2025 09:00:00 GMT</pubDate>
+        <description>Your guide to all things Moringa!</description>
         <atom:link href="https://www.moringaeducation.org/rss.xml" rel="self" type="application/rss+xml" />
-
-        
-        <!-- Blog Post -->
         <item>
             <title>What is Moringa? A Fact-Packed Guide for Everyone</title>
             <link>https://www.moringaeducation.org/blog/evergreen-post</link>
@@ -17,6 +12,5 @@
             <pubDate>Wed, 15 Jan 2025 09:00:00 GMT</pubDate>
             <guid>https://www.moringaeducation.org/blog/evergreen-post</guid>
         </item>
-
     </channel>
 </rss>
