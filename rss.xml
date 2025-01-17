@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Moringa Education</title>
+        <link>https://www.moringaeducation.org</link>
+        <description>Educating families worldwide on the benefits of moringa and healthy eating.</description>
+        <language>en-us</language>
+        <pubDate>Mon, 15 Jan 2025 09:00:00 GMT</pubDate>
+        
+        <!-- Blog Post -->
+        <item>
+            <title>What is Moringa? A Fact-Packed Guide for Everyone</title>
+            <link>https://www.moringaeducation.org/blog/evergreen-post</link>
+            <description>A comprehensive guide to Moringa, the Miracle Tree. Learn about its benefits, uses, and why it's called the Miracle Tree.</description>
+            <pubDate>Mon, 15 Jan 2025 09:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
