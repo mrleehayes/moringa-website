@@ -88,7 +88,7 @@ section ul {
     padding: 0;
     margin: 1rem auto 0;
     max-width: 800px;
-    text-align: left;
+    text-align: justify;
 }
 
 section ul li {
@@ -99,6 +99,7 @@ section ul li {
 
 section ul li a {
     color: #3c763d; /* Green links for consistency */
+    font-size: 1.1rem;
     text-decoration: none;
     font-weight: 700;
 }
