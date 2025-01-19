@@ -65,6 +65,16 @@ nav ul li a:hover {
     border-bottom: 3px solid #3c763d;
 }
 
+.hero-image {
+    width: 50%;       /* Makes the image fill the width of its container */
+    max-width: 400px;  /* Limits the maximum width of the image */
+    height: auto;      /* Maintains the aspect ratio of the image */
+    margin: 0 auto 20px; /* Centers the image and adds space below */
+    display: block;    /* Ensures the image behaves as a block element */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
 .hero-section h2, section h2 {
     font-size: 1.8rem;
     color: #3c763d;
@@ -74,6 +84,16 @@ nav ul li a:hover {
     font-size: 1.1rem;
     margin-top: 0.5rem;
     color: #555;
+}
+
+.blog-content {
+    margin: 20px auto; /* Adds space above and below the article */
+    padding: 20px; /* Adds inner spacing inside the article */
+    max-width: 800px; /* Ensures the content doesn’t stretch too wide */
+    line-height: 1.6; /* Improves readability */
+    background-color: #fff; /* Optional: Adds a background color */
+    border-radius: 8px; /* Optional: Softens the edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
 /* Section Styling */
