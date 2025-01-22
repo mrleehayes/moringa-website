@@ -6,7 +6,6 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://moringaeducation.org/</loc>
   <lastmod>2025-01-15T14:41:09+00:00</lastmod>
@@ -42,11 +41,19 @@
   <lastmod>2025-01-15T14:41:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<!-- Updated 'evergreen-post' entry -->
 <url>
-  <loc>https://moringaeducation.org/blog/evergreen-post</loc>
+  <loc>https://moringaeducation.org/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree.html</loc>
   <lastmod>2025-01-15T14:41:09+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+<!-- New Blog Post -->
+<url>
+  <loc>https://moringaeducation.org/blog/evergreen/how-moringa-can-help-with-malnutrition-and-poverty.html</loc>
+  <lastmod>2025-01-22T14:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
 <url>
     <loc>https://www.moringaeducation.org/rss.xml</loc>
     <lastmod>2025-01-15</lastmod>
