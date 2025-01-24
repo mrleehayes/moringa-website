@@ -96,6 +96,133 @@ nav ul li a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
+/* Recipes Template Specific Styling */
+
+/* General Recipe Article Styling */
+.recipe {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-title {
+    font-size: 2rem;
+    color: #3c763d;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .recipe-intro {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Recipe Image Styling */
+  .recipe-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Ingredients Section Styling */
+  .ingredients ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto 1.5rem;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .ingredients ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .ingredients ul li::before {
+    content: '•';
+    color: #3c763d;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Instructions Section Styling */
+  .instructions ol {
+    padding: 0;
+    margin: 0 auto 1.5rem;
+    max-width: 600px;
+    text-align: left;
+    counter-reset: step;
+  }
+  
+  .instructions ol li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  /* Nutrition Info Section */
+  .nutrition-info {
+    background-color: #e6f4e6;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nutrition-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  /* Call-to-Action Section */
+  .cta {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .cta a {
+    background-color: #3c763d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta a:hover {
+    background-color: #2b5e31;
+  }
+  
+  /* Mobile-First Adjustments */
+  @media (max-width: 768px) {
+    .recipe-title {
+      font-size: 1.8rem;
+    }
+  
+    .recipe-intro {
+      font-size: 1rem;
+    }
+  
+    .ingredients ul li, .instructions ol li {
+      font-size: 0.95rem;
+    }
+  }  
+
 /* Section Styling */
 section {
     padding: 1.5rem 1rem; /* Reduced spacing */
