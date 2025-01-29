@@ -66,8 +66,8 @@ nav ul li a:hover {
 }
 
 .hero-image {
-    width: 50%;       /* Makes the image fill the width of its container */
-    max-width: 400px;  /* Limits the maximum width of the image */
+    width: 60%;       /* Makes the image fill the width of its container */
+    max-width: 300px;  /* Limits the maximum width of the image */
     height: auto;      /* Maintains the aspect ratio of the image */
     margin: 0 auto 20px; /* Centers the image and adds space below */
     display: block;    /* Ensures the image behaves as a block element */
@@ -377,40 +377,6 @@ footer p {
     font-size: 1rem;
     color: #6c757d;
 }
-
-/* Recipe List Styling */
-.recipe-list {
-    margin-top: 2rem; /* Add some spacing above the recipe list */
-  }
-  
-  .recipes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
-    grid-gap: 2rem; /* Space between grid items */
-  }
-  
-  .recipe-item {
-    border: none; 
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .recipe-item img {
-    border-radius: 10px 10px 0 0;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .recipe-item h3 {
-    font-size: 1.5rem;
-    color: #3c763d;
-    margin: 1rem 0;
-  }
-  
-  .recipe-item a {
-    text-decoration: none;
-    color: #3c763d; 
-  }
 
 /* Custom Button Styling for Forms */
 form button, .btn-moringa-green {
