@@ -57,198 +57,6 @@ nav ul li a:hover {
     color: #285528; /* Darker green */
 }
 
-/* Style for links within the resources-section */
-.resources-section a {
-    color: #3d3e3e; /* Match your primary color */
-    text-decoration: none; /* Remove underline */
-    font-family: 'Your Font Family', sans-serif; /* Match existing font */
-    font-size: medium;
-    font-weight: normal; /* Match existing weight */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effect */
-  }
-  
-  /* Hover effect for links within resources-section */
-  .resources-section a:hover, .resources-section a:focus {
-    color: #006400; /* Darker green on hover */
-    text-decoration: underline; /* Underline on hover */
-  }
-  
-  /* Active state for links within resources-section */
-  .resources-section a:active {
-    color: #004d00; /* Darker shade for active links */
-  }
-  
-  /* Optional: Add padding to links if needed */
-  .resources-section a {
-    padding: 5px 10px; /* Adjust to fit the design */
-  }  
-
-/* Hero Section */
-.hero-section {
-    background-color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    border-bottom: 3px solid #3c763d;
-}
-
-.hero-image {
-    width: 60%;       /* Makes the image fill the width of its container */
-    max-width: 300px;  /* Limits the maximum width of the image */
-    height: auto;      /* Maintains the aspect ratio of the image */
-    margin: 0 auto 20px; /* Centers the image and adds space below */
-    display: block;    /* Ensures the image behaves as a block element */
-    border-radius: 8px; /* Adds rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-}
-
-.hero-section h2, section h2 {
-    font-size: 1.8rem;
-    color: #3c763d;
-}
-
-.hero-section p, section p {
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-    color: #555;
-}
-
-.blog-content {
-    margin: 20px auto; /* Adds space above and below the article */
-    padding: 20px; /* Adds inner spacing inside the article */
-    max-width: 800px; /* Ensures the content doesn’t stretch too wide */
-    line-height: 1.6; /* Improves readability */
-    background-color: #fff; /* Optional: Adds a background color */
-    border-radius: 8px; /* Optional: Softens the edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-}
-
-/* Recipes Template Specific Styling */
-
-/* General Recipe Article Styling */
-.recipe {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .recipe-title {
-    font-size: 2rem;
-    color: #3c763d;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  .recipe-intro {
-    font-size: 1.1rem;
-    color: #555;
-    text-align: justify;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Recipe Image Styling */
-  .recipe-image img {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Ingredients Section Styling */
-  .ingredients ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto 1.5rem;
-    max-width: 600px;
-    text-align: left;
-  }
-  
-  .ingredients ul li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 0.5rem;
-    position: relative;
-    padding-left: 1.5rem;
-  }
-  
-  .ingredients ul li::before {
-    content: '•';
-    color: #3c763d;
-    position: absolute;
-    left: 0;
-  }
-  
-  /* Instructions Section Styling */
-  .instructions ol {
-    padding: 0;
-    margin: 0 auto 1.5rem;
-    max-width: 600px;
-    text-align: left;
-    counter-reset: step;
-  }
-  
-  .instructions ol li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
-    line-height: 1.6;
-  }
-
-  /* Nutrition Info Section */
-  .nutrition-info {
-    background-color: #e6f4e6;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .nutrition-info p {
-    font-size: 1rem;
-    color: #555;
-    margin: 0.5rem 0;
-  }
-  
-  /* Call-to-Action Section */
-  .cta {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
-  .cta a {
-    background-color: #3c763d;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta a:hover {
-    background-color: #2b5e31;
-  }
-  
-  /* Mobile-First Adjustments */
-  @media (max-width: 768px) {
-    .recipe-title {
-      font-size: 1.8rem;
-    }
-  
-    .recipe-intro {
-      font-size: 1rem;
-    }
-  
-    .ingredients ul li, .instructions ol li {
-      font-size: 0.95rem;
-    }
-  }  
-
 /* Section Styling */
 section {
     padding: 1.5rem 1rem; /* Reduced spacing */
@@ -281,20 +89,53 @@ section ul li a:hover {
     color: #285528; /* Darker green on hover */
 }
 
-/* Call-to-Action Button */
-#call-to-action a.button {
-    background-color: #3c763d;
-    color: white;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    display: inline-block; /* Ensure proper spacing */
-    margin-top: 1rem; /* Add space between text and button */
+/* Hero Section */
+.hero-section {
+    background-color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid #3c763d;
 }
 
-#call-to-action a.button:hover {
-    background-color: #2b5e31; /* Darker shade for better hover contrast */
+.hero-image {
+    width: 60%;       /* Makes the image fill the width of its container */
+    max-width: 300px;  /* Limits the maximum width of the image */
+    height: auto;      /* Maintains the aspect ratio of the image */
+    margin: 0 auto 20px; /* Centers the image and adds space below */
+    display: block;    /* Ensures the image behaves as a block element */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.hero-section h2, section h2 {
+    font-size: 1.8rem;
+    color: #3c763d;
+}
+
+.hero-section p, section p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+/* Call-to-Action Section */
+.cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta a {
+    background-color: #3c763d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #2b5e31;
 }
 
 /* Footer Styling */
@@ -349,7 +190,7 @@ footer p {
     color: #005A2C; /* Darker green on hover */
 }
 
-/* Mobile-first adjustments */
+/* Mobile-first Adjustments */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -373,6 +214,19 @@ footer p {
     .col-md-4 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    /* Mobile adjustments for recipes */
+    .recipe-title {
+        font-size: 1.8rem;
+    }
+
+    .recipe-intro {
+        font-size: 1rem;
+    }
+
+    .ingredients ul li, .instructions ol li {
+        font-size: 0.95rem;
     }
 }
 
@@ -459,4 +313,3 @@ form .form-control:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(60, 118, 61, 0.3);
 }
-
