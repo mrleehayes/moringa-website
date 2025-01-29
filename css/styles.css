@@ -59,6 +59,12 @@ nav ul li a:hover {
 }
 
 /* Section Styling */
+
+h3 {
+    font-size: 1.5rem;
+    color: #3c763d;
+}
+
 section {
     padding: 1.5rem 1rem; /* Reduced spacing */
     text-align: center;
