@@ -62,6 +62,7 @@ nav ul li a:hover {
     color: #3d3e3e; /* Match your primary color */
     text-decoration: none; /* Remove underline */
     font-family: 'Your Font Family', sans-serif; /* Match existing font */
+    font-size: medium;
     font-weight: normal; /* Match existing weight */
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effect */
   }
