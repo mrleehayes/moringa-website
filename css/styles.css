@@ -57,6 +57,31 @@ nav ul li a:hover {
     color: #285528; /* Darker green */
 }
 
+/* Style for links within the resources-section */
+.resources-section a {
+    color: #3d3e3e; /* Match your primary color */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Your Font Family', sans-serif; /* Match existing font */
+    font-weight: normal; /* Match existing weight */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for links within resources-section */
+  .resources-section a:hover, .resources-section a:focus {
+    color: #006400; /* Darker green on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Active state for links within resources-section */
+  .resources-section a:active {
+    color: #004d00; /* Darker shade for active links */
+  }
+  
+  /* Optional: Add padding to links if needed */
+  .resources-section a {
+    padding: 5px 10px; /* Adjust to fit the design */
+  }  
+
 /* Hero Section */
 .hero-section {
     background-color: white;
