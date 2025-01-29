@@ -9,6 +9,22 @@ body {
     background-color: white; /* Light green tint for subtle background */
 }
 
+/* Global image styling */
+img {
+    display: block;       /* Remove extra space below image */
+    margin-left: auto;    /* Automatically adjusts left margin */
+    margin-right: auto;   /* Automatically adjusts right margin */
+    width: 40%;          /* Ensure the image scales to fit container */
+    height: auto;         /* Maintain aspect ratio */
+  }  
+  
+  /* Optional: Additional styles for very small screens */
+  @media (max-width: 480px) {
+    img {
+      max-width: 100%;  /* Ensure images don't overflow on very small screens */
+    }
+  }  
+
 /* Header Styling */
 header {
     background-color: #3c763d; /* Moringa green */
@@ -104,8 +120,6 @@ section ul li a:hover {
     color: #555;
 }
 
-/* Call-to-Action Section */
-
 /* Footer Styling */
 footer {
     background-color: #3c763d;
@@ -177,13 +191,7 @@ footer p {
     footer li {
         margin: 5px; 
     }
-
-    /* Adjust blog card layout for small screens */
-
-    /* Mobile adjustments for recipes */
 }
-
-/* Blog List Styling */
 
 /* Custom Button Styling for Forms */
  .btn-moringa-green {
@@ -200,5 +208,3 @@ footer p {
  .btn-moringa-green:hover {
     background-color: #2b5e31; /* Darker shade for better hover contrast */
 }
-
-/* Form Styling */
