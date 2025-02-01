@@ -11,15 +11,8 @@
             <link>https://www.moringaeducation.org/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree.html</link>
             <description>A comprehensive guide to Moringa, the Miracle Tree. Learn about its benefits, uses, and why it's called the Miracle Tree.</description>
             <pubDate>Wed, 15 Jan 2025 09:00:00 GMT</pubDate>
+            <category>Health</category>
             <guid>https://www.moringaeducation.org/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree.html</guid>
-        </item>
-
-        <item>
-            <title>How Moringa Can Help with Malnutrition and Poverty</title>
-            <link>https://www.moringaeducation.org/blog/evergreen/how-moringa-can-help-with-malnutrition-and-poverty.html</link>
-            <description>Explore how Moringa can be a powerful tool in fighting malnutrition and poverty, offering a sustainable solution for low-income families.</description>
-            <pubDate>Wed, 22 Jan 2025 09:00:00 GMT</pubDate>
-            <guid>https://www.moringaeducation.org/blog/evergreen/how-moringa-can-help-with-malnutrition-and-poverty.html</guid>
         </item>
 
         <item>
@@ -28,8 +21,7 @@
             <description><![CDATA[
                 Learn how to prepare this simple and nutritious Basic Moringa Soup, made with fresh moringa leaves and common pantry ingredients. Perfect for families on a budget, this easy recipe is packed with vitamins and minerals to support health and immunity. <a href="https://www.moringaeducation.org/recipes/basic-moringa-soup-recipe.html">Try the recipe today!</a>
             ]]></description>
-            <author>info@moringaeducation.org</author>
-            <pubDate>Fri, 24 Jan 2025 08:00:00 +0000</pubDate>
+            <pubDate>Fri, 24 Jan 2025 08:00:00 GMT</pubDate>
             <category>Recipes</category>
             <guid isPermaLink="true">https://www.moringaeducation.org/recipes/basic-moringa-soup-recipe.html</guid>
         </item>
@@ -39,6 +31,7 @@
             <link>https://moringaeducation.org/blog/evergreen/10-surprising-benefits-of-moringa.html</link>
             <description>Discover how moringa can boost immunity, fight malnutrition, and transform family health with these 10 surprising benefits.</description>
             <pubDate>Fri, 24 Jan 2025 12:00:00 GMT</pubDate>
+            <category>Health</category>
             <guid>https://moringaeducation.org/blog/evergreen/10-surprising-benefits-of-moringa.html</guid>
         </item>
 
@@ -47,6 +40,7 @@
             <link>https://moringaeducation.org/blog/evergreen/how-moringa-can-help-with-malnutrition-and-poverty.html</link>
             <description>Learn how moringa’s rich nutrients can combat malnutrition and empower communities worldwide.</description>
             <pubDate>Thu, 30 Jan 2025 12:00:00 GMT</pubDate>
+            <category>Health</category>
             <guid>https://moringaeducation.org/blog/evergreen/how-moringa-can-help-with-malnutrition-and-poverty.html</guid>
         </item>
 
@@ -55,6 +49,7 @@
             <link>https://moringaeducation.org/recipes/evergreen/pure-moringa-juice-recipe.html</link>
             <description>Learn how to make pure moringa juice with this simple recipe. Perfect for smoothies, soups, and stews.</description>
             <pubDate>Sat, 01 Feb 2025 12:00:00 GMT</pubDate>
+            <category>Recipes</category>
             <guid>https://moringaeducation.org/recipes/evergreen/pure-moringa-juice-recipe.html</guid>
         </item>
 
@@ -63,6 +58,7 @@
             <link>https://moringaeducation.org/recipes/evergreen/how-to-make-moringa-tea-at-home.html</link>
             <description>Learn how to make moringa tea at home with this simple recipe. Perfect for boosting immunity and overall health.</description>
             <pubDate>Sat, 01 Feb 2025 12:00:00 GMT</pubDate>
+            <category>Recipes</category>
             <guid>https://moringaeducation.org/recipes/evergreen/how-to-make-moringa-tea-at-home.html</guid>    
         </item>
     </channel>
