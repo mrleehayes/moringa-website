@@ -15,7 +15,8 @@ img {
     display: block;       /* Remove extra space below image */
     margin-left: auto;    /* Automatically adjusts left margin */
     margin-right: auto;   /* Automatically adjusts right margin */
-    width: 40%;          /* Ensure the image scales to fit container */
+    width: 90%; 
+    max-width: 400px;        /* Ensure the image scales to fit container */
     height: auto;         /* Maintain aspect ratio */
   }  
   
