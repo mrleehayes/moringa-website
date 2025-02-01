@@ -121,6 +121,18 @@ section ul li a:hover {
     color: #555;
 }
 
+.cta {
+    text-align: center; /* Centers inline elements like <p> and <a> */
+    margin: 20px auto; /* Adds spacing and centers the div if needed */
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers items horizontally */
+  }
+  
+  .cta p {
+    font-weight: bold; /* Makes text bold */
+  }  
+
 /* Footer Styling */
 footer {
     background-color: #3c763d;
