@@ -10,7 +10,7 @@ document.getElementById('search-form').addEventListener('submit', function(event
     // Array of sample recipes (replace with dynamic fetching later)
     const recipes = [
         { name: "Moringa Smoothie", url: "/recipes/moringa-smoothie.html" },
-        { name: "Moringa Soup", url: "/recipes/moringa-soup.html" },
+        { name: "Moringa Soup", url: "/recipes/evergreen/basic-moringa-soup-recipe.html" },
         { name: "Moringa Pancakes", url: "/recipes/moringa-pancakes.html" }
     ];
 
