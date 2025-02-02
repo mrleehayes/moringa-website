@@ -79,5 +79,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 </url>
+<url>
+    <loc>https://www.moringaeducation.org/blog/evergreen/moringa-easy-ways-to-add-to-diet.html</loc>
+    <lastmod>2025-02-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
 
 </urlset>
