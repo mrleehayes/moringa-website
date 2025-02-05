@@ -1,29 +1,123 @@
-// Placeholder for any custom JavaScript you want to add
-console.log("Moringa Education Scripts Loaded");
+// Ensure all scripts run after the page has loaded
+window.addEventListener("load", function () {
+    
+    /** =========================
+     *  🍪 COOKIE CONSENT SETUP
+     *  ========================= */
+    window.cookieconsent.initialise({
+        palette: {
+            popup: { background: "#2c7c2c" },
+            button: { background: "#ffffff", text: "#2c7c2c" }
+        },
+        theme: "classic",
+        position: "bottom",
+        type: "opt-in", // Blocks cookies until user consents
+        content: {
+            message: "We use cookies to improve your experience and analyze site traffic. By clicking 'Accept', you consent to our use of cookies.",
+            dismiss: "Reject",
+            allow: "Accept",
+            link: "Privacy Policy",
+            href: "/legal/cookie-policy.html"
+        },
+        onInitialise: function (status) {
+            if (status === cookieconsent.status.allow) {
+                enableCookies();
+            }
+        },
+        onStatusChange: function (status) {
+            if (status === cookieconsent.status.allow) {
+                enableCookies();
+            } else {
+                disableCookies();
+            }
+        }
+    });
 
-document.getElementById('search-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-    const query = document.getElementById('search-input').value.toLowerCase();
-    const resultsContainer = document.getElementById('search-results');
-    resultsContainer.innerHTML = ""; // Clear previous results
-
-    // Array of sample recipes (replace with dynamic fetching later)
-    const recipes = [
-        { name: "Moringa Smoothie", url: "/recipes/moringa-smoothie.html" },
-        { name: "Moringa Soup", url: "/recipes/evergreen/basic-moringa-soup-recipe.html" },
-        { name: "Moringa Pancakes", url: "/recipes/moringa-pancakes.html" }
-    ];
-
-    // Filter recipes
-    const filteredRecipes = recipes.filter(recipe => recipe.name.toLowerCase().includes(query));
-
-    if (filteredRecipes.length > 0) {
-        filteredRecipes.forEach(recipe => {
-            const li = document.createElement("li");
-            li.innerHTML = `<a href="${recipe.url}">${recipe.name}</a>`;
-            resultsContainer.appendChild(li);
-        });
-    } else {
-        resultsContainer.innerHTML = "<li>No recipes found</li>";
+    /** =========================
+     *  ✅ ENABLE COOKIES & LOAD GOOGLE ANALYTICS
+     *  ========================= */
+    function enableCookies() {
+        document.cookie = "cookiesAccepted=true; path=/; max-age=31536000"; // 1-year validity
+        loadAnalytics();
     }
+
+    /** =========================
+     *  ❌ DISABLE COOKIES & REMOVE TRACKING
+     *  ========================= */
+    function disableCookies() {
+        document.cookie = "cookiesAccepted=false; path=/; max-age=31536000";
+        removeCookies();
+    }
+
+    /** =========================
+     *  📊 LOAD GOOGLE ANALYTICS IF CONSENT GIVEN
+     *  ========================= */
+    function loadAnalytics() {
+        if (getCookie("cookiesAccepted") === "true") {
+            let script = document.createElement("script");
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-PRBPH74YJ5"; // Replace with actual GA ID
+            script.async = true;
+            document.head.appendChild(script);
+
+            script.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag("js", new Date());
+                gtag("config", "G-PRBPH74YJ5"); // Replace with your actual GA ID
+            };
+        }
+    }
+
+    /** =========================
+     *  🍪 HELPER FUNCTION TO READ COOKIES
+     *  ========================= */
+    function getCookie(name) {
+        let match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+        return match ? match[2] : null;
+    }
+
+    /** =========================
+     *  🗑 REMOVE UNWANTED TRACKING COOKIES
+     *  ========================= */
+    function removeCookies() {
+        document.cookie.split(";").forEach(function (cookie) {
+            document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date(0).toUTCString() + ";path=/");
+        });
+    }
+
+    /** =========================
+     *  🔍 SEARCH FUNCTIONALITY
+     *  ========================= */
+    const searchForm = document.getElementById('search-form');
+    if (searchForm) {
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+            resultsContainer.innerHTML = ""; // Clear previous results
+
+            // Sample recipes (can be replaced with dynamic fetching later)
+            const recipes = [
+                { name: "Moringa Smoothie", url: "/recipes/moringa-smoothie.html" },
+                { name: "Moringa Soup", url: "/recipes/evergreen/basic-moringa-soup-recipe.html" },
+                { name: "Moringa Pancakes", url: "/recipes/moringa-pancakes.html" }
+            ];
+
+            // Filter recipes based on search query
+            const filteredRecipes = recipes.filter(recipe => recipe.name.toLowerCase().includes(query));
+
+            if (filteredRecipes.length > 0) {
+                filteredRecipes.forEach(recipe => {
+                    const li = document.createElement("li");
+                    li.innerHTML = `<a href="${recipe.url}">${recipe.name}</a>`;
+                    resultsContainer.appendChild(li);
+                });
+            } else {
+                resultsContainer.innerHTML = "<li>No recipes found</li>";
+            }
+        });
+    }
+
+    // General console log for debugging
+    console.log("Moringa Education Scripts Loaded");
 });
