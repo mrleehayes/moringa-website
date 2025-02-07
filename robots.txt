@@ -1,0 +1,3 @@
+# robots.txt for Moringa Education
+
+Sitemap: https://moringaeducation.org/sitemap.xml
