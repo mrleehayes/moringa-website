@@ -138,6 +138,44 @@ h3 a, h5 a {
   color: #444;
   text-decoration: none; /* Optional: Removes underlines from links */
 }
+/* Social Share Buttons */
+.social-share {
+    text-align: center;
+  }
+  
+  #share-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  #share-buttons a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50; /* Adjust the background color */
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  #share-buttons a:hover {
+    background-color: #45a049; /* Hover effect */
+  }
+  
+  #share-buttons a i, #share-buttons a svg {
+    color: white;
+    font-size: 20px; /* Adjust icon size */
+  }
+  
+  @media (max-width: 600px) {
+    #share-buttons {
+      gap: 10px; /* Adjust vertical space between buttons */
+    }
+  
+    #share-buttons a {
+      padding: 12px; /* Adjust button size for mobile */
+    }
+  }  
 
 /* Footer Styling */
 footer {
