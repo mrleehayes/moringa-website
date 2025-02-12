@@ -134,7 +134,7 @@ section ul li a:hover {
     font-weight: bold; /* Makes text bold */
   }  
 
-h3 a {
+h3 a, h5 a {
   color: #444;
   text-decoration: none; /* Optional: Removes underlines from links */
 }
