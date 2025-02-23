@@ -1,51 +1,50 @@
 /* General Styling */
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 16px; /* Optional, you can adjust font size */
+    font-size: 16px;
     text-align: justify;
-    line-height: 1.5; /* Optional, for better readability */
+    line-height: 1.5;
     margin: 1%;
     padding: 0;
     box-sizing: border-box;
-    background-color: white; /* Light green tint for subtle background */
+    background-color: white;
 }
 
-/* Global image styling */
+/* Global image styling (Keep this for default behavior) */
 img {
-    display: block;       /* Remove extra space below image */
-    margin-left: auto;    /* Automatically adjusts left margin */
-    margin-right: auto;   /* Automatically adjusts right margin */
-    width: 90%; 
-    max-width: 400px;        /* Ensure the image scales to fit container */
-    height: auto;         /* Maintain aspect ratio */
-  }  
-  
-  /* Optional: Additional styles for very small screens */
-  @media (max-width: 480px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media (max-width: 480px) {
     img {
-      max-width: 100%;  /* Ensure images don't overflow on very small screens */
+        max-width: 100%;
     }
-  }  
+}
 
 /* Header Styling */
 header {
-    background-color: #3c763d; /* Moringa green */
+    background-color: #3c763d;
     color: white;
-    padding: 2rem 1rem; /* Reduced padding for less spacing */
+    padding: 2rem 1rem;
     text-align: center;
 }
 
 header h1 {
     font-size: 2rem;
     margin: 0;
-    color: white !important; /* Ensures it overrides other styles */
+    color: white !important;
     font-weight: bold;
 }
 
 header p {
     font-size: 1.1rem;
     margin-top: 0.5rem;
-    color: #e6f4e6; /* Softer white-green for text */
+    color: #e6f4e6;
     padding: 0 1rem;
 }
 
@@ -67,25 +66,48 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #3c763d; /* Moringa green */
+    color: #3c763d;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #285528; /* Darker green */
+    color: #285528;
+}
+
+/* Recipe Card Styling (Apply image fix here) */
+.card {
+    margin-bottom: 1.5rem; /* Add space between cards */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Adjust this value */
+    object-fit: cover; /* Or 'contain' if you prefer */
+}
+
+.card-body {
+    padding: 1rem; /* Add padding inside card body */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
 }
 
 /* Section Styling */
-
 section {
-    padding: 1.5rem 1rem; /* Reduced spacing */
+    padding: 1.5rem 1rem;
     text-align: center;
-    background-color: #f1f1f1; /* Slightly darker background for better contrast */
+    background-color: #f1f1f1;
 }
 
 section ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     padding: 0;
     margin: 1rem auto 0;
     max-width: 800px;
@@ -93,89 +115,90 @@ section ul {
 }
 
 section ul li {
-    color: #555; /* Consistent color */
-    font-size: 1rem; /* Match font size with <p> */
+    color: #555;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
 section ul li a {
-    color: #3c763d; /* Green links for consistency */
+    color: #3c763d;
     font-size: 1.1rem;
     text-decoration: none;
     font-weight: 700;
 }
 
 section ul li a:hover {
-    color: #285528; /* Darker green on hover */
+    color: #285528;
 }
 
-/* Hero Section */
-
- section h2 {
+section h2 {
     font-size: 1.8rem;
     color: #3c763d;
 }
 
- section p {
+section p {
     font-size: 1.1rem;
     margin-top: 0.5rem;
     color: #555;
 }
 
 .cta {
-    text-align: center; /* Centers inline elements like <p> and <a> */
-    margin: 20px auto; /* Adds spacing and centers the div if needed */
+    text-align: center;
+    margin: 20px auto;
     display: flex;
-    flex-direction: column; /* Stacks elements vertically */
-    align-items: center; /* Centers items horizontally */
-  }
-  
-  .cta p {
-    font-weight: bold; /* Makes text bold */
-  }  
-
-h3 a, h5 a {
-  color: #444;
-  text-decoration: none; /* Optional: Removes underlines from links */
+    flex-direction: column;
+    align-items: center;
 }
+
+.cta p {
+    font-weight: bold;
+}
+
+h3 a,
+h5 a {
+    color: #444;
+    text-decoration: none;
+}
+
 /* Social Share Buttons */
 .social-share {
     text-align: center;
-  }
-  
-  #share-buttons {
+}
+
+#share-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-  }
-  
-  #share-buttons a {
+}
+
+#share-buttons a {
     display: inline-block;
     padding: 10px;
-    background-color: #4CAF50; /* Adjust the background color */
+    background-color: #4CAF50;
     border-radius: 50%;
     transition: background-color 0.3s;
-  }
-  
-  #share-buttons a:hover {
-    background-color: #45a049; /* Hover effect */
-  }
-  
-  #share-buttons a i, #share-buttons a svg {
+}
+
+#share-buttons a:hover {
+    background-color: #45a049;
+}
+
+#share-buttons a i,
+#share-buttons a svg {
     color: white;
-    font-size: 20px; /* Adjust icon size */
-  }
-  
-  @media (max-width: 600px) {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
     #share-buttons {
-      gap: 10px; /* Adjust vertical space between buttons */
+        gap: 10px;
     }
-  
+
     #share-buttons a {
-      padding: 12px; /* Adjust button size for mobile */
+        padding: 12px;
     }
-  }  
+}
 
 /* Footer Styling */
 footer {
@@ -186,9 +209,9 @@ footer {
 }
 
 footer nav {
-    background-color: transparent; /* Matches the footer's background */
-    padding: 0; /* Removes unnecessary padding */
-    box-shadow: none; /* Removes shadow */
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
 }
 
 footer ul {
@@ -214,19 +237,19 @@ footer p {
 }
 
 .footer-social {
-    text-align: center; /* Center the icons */
+    text-align: center;
     margin: 15px 0;
 }
 
 .footer-social a {
-    color: white; /* Match your green theme */
+    color: white;
     text-decoration: none;
-    font-size: 17px; /* Size of the icons */
+    font-size: 17px;
     margin: 0 10px;
 }
 
 .footer-social a:hover {
-    color: #005A2C; /* Darker green on hover */
+    color: #005A2C;
 }
 
 /* Mobile-first Adjustments */
@@ -240,19 +263,19 @@ footer p {
     }
 
     footer ul {
-        display: flex; 
-        flex-wrap: wrap; 
-        justify-content: center; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    
+
     footer li {
-        margin: 5px; 
+        margin: 5px;
     }
 }
 
 /* Custom Button Styling for Forms */
- .btn-moringa-green {
-    background-color: #3c763d; /* Moringa green */
+.btn-moringa-green {
+    background-color: #3c763d;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -262,6 +285,6 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
- .btn-moringa-green:hover {
-    background-color: #2b5e31; /* Darker shade for better hover contrast */
+.btn-moringa-green:hover {
+    background-color: #2b5e31;
 }
