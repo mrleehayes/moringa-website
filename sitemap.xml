@@ -43,6 +43,7 @@
 <url>
   <loc>https://moringaeducation.org/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree.html</loc>
   <lastmod>2025-01-15T14:41:09+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
@@ -59,13 +60,13 @@
     <loc>https://moringaeducation.org/blog/evergreen/10-surprising-benefits-of-moringa.html</loc>
     <lastmod>2025-01-24</lastmod>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
 </url>
 <url>
     <loc>https://moringaeducation.org/blog/evergreen/how-moringa-can-help-with-malnutrition-and-poverty.html</loc>
     <lastmod>2025-01-30</lastmod>
     <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
 </url>
 <url>
     <loc>https://moringaeducation.org/recipes/evergreen/pure-moringa-juice-recipe.html</loc>
@@ -108,5 +109,11 @@
     <lastmod>2025-02-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://moringaeducation.org/blog/evergreen/how-to-make-moringa-powder-at-home.html</loc>
+    <lastmod>2025-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
 </url>
 </urlset>
