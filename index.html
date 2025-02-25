@@ -7,8 +7,12 @@
     <meta name="description" content="Learn about the incredible health and nutritional benefits of moringa. Explore guides, recipes, and resources to empower low-income families worldwide to embrace sustainable living with this powerful superfood.">
     <meta name="keywords" content="moringa health benefits, nutrition, moringa superfood, moringa recipes, sustainable living, low-income families, moringa education">
     <link rel="alternate" type="application/rss+xml" title="Moringa Education RSS Feed" href="https://www.moringaeducation.org/rss.xml">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="/images/moringa-tree.webp" type="image/webp">
+    
+    <!-- Non-blocking CSS loading -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/cleaned.css">
 </head>
@@ -31,14 +35,13 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="/images/moringa-tree.webp" class="card-img-top" alt="Moringa leaves">
+                    <img src="/images/moringa-tree.webp" class="card-img-top" alt="Moringa leaves" width="600" height="400">
                     <div class="card-body">
-                        <p class="card-text">At Moringa Education, we are dedicated to empowering families with the knowledge they need to unlock the incredible health, nutritional, and environmental benefits of moringa. Join us on a journey to better health and sustainable living through this powerful superfood.</p>
+                        <p class="card-text">At Moringa Education, we are dedicated to empowering families with the knowledge they need to unlock the incredible health, nutritional, and environmental benefits of moringa.</p>
                         <a href="/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree.html" class="btn btn-moringa-green">Learn More About Moringa's Benefits</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -104,9 +107,10 @@
         <p>The content on this website is for informational purposes only and is not a substitute for professional medical advice. Always consult a healthcare provider for medical concerns.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/js/scripts.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer src="/js/scripts.js"></script>
 </body>
 </html>
