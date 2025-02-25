@@ -1,3 +1,6 @@
 # robots.txt for Moringa Education
 
 Sitemap: https://moringaeducation.org/sitemap.xml
+
+User-agent: *
+Disallow: /thank-you/ 
