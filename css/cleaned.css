@@ -65,14 +65,46 @@ nav ul {
 }
 
 nav ul li a {
+    display: block; /* Important:  Makes the whole li clickable */
     text-decoration: none;
-    color: #3c763d;
+    color: #ffffff; /* Changed to white for better button appearance */
     font-weight: 500;
-    transition: color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Added background-color transition */
+    padding: 0.4rem 0.5rem; /* Adjust padding for button size */
+    border-radius: 5px; /* Optional: Rounds the corners for a button look */
+    background-color: #3c763d; /* Primary button color */
+    border: 2px solid #3c763d; /* Add a border that matches the BG color */
 }
 
 nav ul li a:hover {
-    color: #285528;
+    background-color: #ffffff; /*  Inverted colors on hover */
+    color: #3c763d; /* Inverted colors on hover */
+}
+
+nav ul li strong a {  /* Style the Moringa Education link */
+    font-weight: bold; /* Keep the bold */
+    background-color: #ffffff;
+    color: #3c763d;
+}
+
+nav ul li strong a:hover {
+    background-color: #3c763d;
+    color: #ffffff;
+}
+
+/* Media Query for larger screens (e.g., 768px and up) */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Display items in a row */
+        justify-content: center; /* Space items evenly */
+        gap: 1.5rem; /* Larger gap for larger screens */
+    }
+
+    nav ul li a {
+        padding: 0.75rem 1.5rem; /* Larger padding for desktop */
+        width: auto;  /* Allow buttons to size based on content */
+        text-align: left; /* Align text left again */
+    }
 }
 
 /* Recipe Card Styling (Apply image fix here) */
