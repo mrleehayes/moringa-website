@@ -122,6 +122,7 @@ window.addEventListener("load", function () {
     console.log("Moringa Education Scripts Loaded");
 });
 
+// Handle YouTube video container functionality
 document.addEventListener("DOMContentLoaded", function () {
     const videoContainers = document.querySelectorAll(".video-container");
 
