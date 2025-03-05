@@ -334,6 +334,7 @@ footer p {
     position: relative;
     width: 100%;
     max-width: 560px; /* Adjust based on your layout */
+    margin: 0 auto; /* Centers the video container */
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
