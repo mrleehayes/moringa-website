@@ -121,3 +121,30 @@ window.addEventListener("load", function () {
     // General console log for debugging
     console.log("Moringa Education Scripts Loaded");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const videoContainers = document.querySelectorAll(".video-container");
+
+    videoContainers.forEach(container => {
+        const videoId = container.getAttribute("data-video-id");
+        const thumbnail = container.querySelector(".video-thumbnail");
+
+        // Set YouTube thumbnail
+        thumbnail.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+
+        container.addEventListener("click", function () {
+            // Create and load the YouTube iframe dynamically
+            const iframe = document.createElement("iframe");
+            iframe.setAttribute("src", `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`);
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+            iframe.setAttribute("allowfullscreen", "true");
+            iframe.style.width = "100%";
+            iframe.style.height = "315px"; // Adjust as needed
+
+            // Replace the thumbnail with the YouTube iframe
+            container.innerHTML = "";
+            container.appendChild(iframe);
+        });
+    });
+});
