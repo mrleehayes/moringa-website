@@ -186,7 +186,16 @@ section p {
     font-weight: bold;
 }
 
-h3 a,
+h3 a {
+    color: #3c763d;  /* Matches other links */
+    font-weight: 700; /* Makes it bolder */
+    text-decoration: underline; /* Makes it more obvious */
+}
+
+h3 a:hover {
+    color: #285528; /* Darker green on hover */
+}
+
 h5 a {
     color: #444;
     text-decoration: none;
