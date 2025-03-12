@@ -111,6 +111,24 @@
     <priority>0.80</priority>
 </url>
 <url>
+    <loc>https://moringaeducation.org/legal/privacy-policy</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+</url>
+<url>
+    <loc>https://moringaeducation.org/legal/cookie-policy</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+</url>
+<url>
+    <loc>https://moringaeducation.org/legal/terms-conditions</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+</url>
+<url>
     <loc>https://moringaeducation.org/blog/evergreen/how-to-make-moringa-powder-at-home</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>weekly</changefreq>
