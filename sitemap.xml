@@ -187,20 +187,5 @@
     <lastmod>2025-03-30</lastmod> <!-- Today's date -->
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <video:video>
-        <video:thumbnail_loc>https://img.youtube.com/vi/3ZR-YWOkqa4/hqdefault.jpg</video:thumbnail_loc>
-        <video:title>Immunity Boosting Moringa, Orange, Carrot &amp; Garlic Juice</video:title>
-        <video:description>Boost your immune system with this vitamin-packed juice! This easy recipe combines moringa, orange, carrot, and garlic for a refreshing and healthy drink to fight off colds and flu.</video:description>
-        <video:content_loc>https://www.youtube.com/watch?v=3ZR-YWOkqa4</video:content_loc>
-        <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/3ZR-YWOkqa4?autoplay=1</video:player_loc>
-        <video:publication_date>2025-03-30</video:publication_date> <!-- Today's date -->
-        <video:family_friendly>yes</video:family_friendly>
-        <video:requires_subscription>no</video:requires_subscription>
-        <video:tag>moringa</video:tag>
-        <video:tag>juice</video:tag>
-        <video:tag>immune boosting</video:tag>
-        <video:tag>health</video:tag>
-        <video:tag>recipe</video:tag>
-    </video:video>
 </url>
 </urlset>
