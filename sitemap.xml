@@ -194,4 +194,14 @@
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://www.moringaeducation.org/recipes/general/filipino-inspired-moringa-rice-bowl</loc>
+  <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+  <image:image>
+      <image:loc>https://www.moringaeducation.org/recipes/images/filipino-inspired-moringa-rice-bowl-recipe-uk.webp</image:loc>
+      <image:title>Filipino-Inspired Moringa Rice Bowl (UK-Friendly)</image:title>
+  </image:image>
+</url>
 </urlset>
