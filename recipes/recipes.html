@@ -10,13 +10,14 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Moringa Recipes: Healthy Meals for the Whole Family | Moringa Education</title>
-    <meta name="description" content="Explore a variety of easy and nutritious moringa recipes, from smoothies to soups. Discover how to incorporate this powerful superfood into your family's meals and enjoy its incredible health benefits.">
-    <meta name="keywords" content="moringa recipes, moringa, moringa benefits, moringa nutrition, healthy recipes, superfood recipes, moringa soup, moringa juice, moringa tea">
-    <link rel="canonical" href="https://moringaeducation.org/recipes/recipes">
+    <title>10+ Delicious Moringa Recipes: Healthy Meals & Drinks | Moringa Education</title> <!-- Slightly adjusted title for clarity & keyword variation -->
+    <meta name="description" content="Explore over 10 easy and nutritious moringa recipes, from energizing smoothies & teas to hearty soups & meals. Discover simple ways to add this powerful superfood to your diet."> <!-- Updated count, added keyword variations -->
+    <!-- Removed meta keywords tag as it's largely ignored -->
+    <link rel="canonical" href="https://moringaeducation.org/recipes/recipes"> <!-- Ensure this URL is correct! Is it /recipes/ or /recipes/recipes? -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" media="print" onload="this.media='all'">
     <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"></noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+    </noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/cleaned.css">
@@ -25,15 +26,15 @@
           "@context": "https://schema.org",
           "@type": "ItemList",
           "name": "Moringa Recipe Collection",
-          "description": "A collection of delicious and healthy moringa recipes including soups, juices, teas, smoothies, and main dishes.",
+          "description": "A collection of delicious and healthy moringa recipes including soups, juices, teas, smoothies, main dishes, and breakfast ideas.", // Slightly expanded description
           "url": "https://moringaeducation.org/recipes/recipes", // Canonical URL of this hub page
-          "numberOfItems": 8, // The total number of recipes listed on THIS page
+          "numberOfItems": 11, // *** CORRECTED: Set to 11 to match displayed recipes ***
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Nutritious Basic Moringa Soup", // Recipe Title
-              "url": "https://moringaeducation.org/recipes/evergreen/basic-moringa-soup-recipe" // URL to the specific recipe
+              "name": "Nutritious Basic Moringa Soup",
+              "url": "https://moringaeducation.org/recipes/evergreen/basic-moringa-soup-recipe"
             },
             {
               "@type": "ListItem",
@@ -76,8 +77,25 @@
               "position": 8,
               "name": "Filipino-Inspired Moringa Rice Bowl (UK-Friendly)",
               "url": "https://moringaeducation.org/recipes/general/filipino-inspired-moringa-rice-bowl"
+            },
+            { // *** ADDED Missing Recipe ***
+              "@type": "ListItem",
+              "position": 9,
+              "name": "Moringa Scrambled Eggs on Toast",
+              "url": "https://moringaeducation.org/recipes/general/moringa-scrambled-eggs-on-toast-recipe"
+            },
+            { // *** ADDED Missing Recipe ***
+              "@type": "ListItem",
+              "position": 10,
+              "name": "Moringa Halloumi Masala",
+              "url": "https://moringaeducation.org/recipes/evergreen/moringa-halloumi-masala-recipe"
+            },
+            { // *** ADDED Missing Recipe ***
+              "@type": "ListItem",
+              "position": 11,
+              "name": "Moringa Leaf Bread",
+              "url": "https://moringaeducation.org/recipes/evergreen/moringa-leaf-bread-recipe"
             }
-            // Add more ListItem objects here if you add more recipes to this page
           ]
         }
         </script>
@@ -86,206 +104,232 @@
     <nav>
         <ul>
             <li><strong><a href="/">Moringa Education</a></strong></li>
-            <li><a href="/recipes/recipes">Recipes</a></li>
+            <li><a href="/recipes/recipes">Recipes</a></li> <!-- Ensure this link matches canonical -->
             <li><a href="/videos/videos">Videos</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/contact/">Contact</a></li>
-        </ul>        
+        </ul>
     </nav>
 
-    <header>
+    <header class="container text-center py-4"> <!-- Added container/padding for consistency -->
         <h1>Moringa Recipes: Delicious & Nutritious Meals</h1>
-        <p>Unleash the power of moringa! Explore our collection of easy and healthy recipes featuring this incredible superfood. From vibrant smoothies to savory dishes, discover how to nourish your body and tantalize your taste buds with moringa's unique flavor.</p>
+        <p>Unleash the power of moringa! Explore our growing collection of easy and healthy recipes featuring this incredible superfood. From vibrant smoothies and teas to savory soups and main dishes, discover simple ways to nourish your body and tantalize your taste buds.</p> <!-- Slightly enhanced intro -->
 
-        <!-- Future Search Feature Placeholder  
-
+        <!-- Future Search Feature Placeholder
         <form id="search-form">
             <input type="text" id="search-input" placeholder="Search recipes..." aria-label="Search recipes">
             <button type="submit" class="btn-moringa-green btn-icon">
                 <i class="fas fa-search"></i>
-            </button>            
+            </button>
         </form>
-
-        <ul id="search-results"></ul> 
-
+        <ul id="search-results"></ul>
         -->
-
     </header>
 
-    <main>  <section id="recipe-list" class="container">
+    <!-- *** Single MAIN element starts here *** -->
+    <main class="container">
+        <section id="recipe-list" class="py-4">
+             <h2 class="text-center mb-4">Explore Our Moringa Recipe Collection</h2> <!-- Added a sub-heading -->
+             <p class="text-center mb-4">Find your next favorite healthy meal below, featuring drinks, soups, mains, and more!</p> <!-- Added intro sentence suggesting categorization -->
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/recipes/images/basic-moringa-soup.avif" class="card-img-top" alt="Basic Moringa Soup">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/evergreen/basic-moringa-soup-recipe" title="Learn more about Basic Moringa Soup">Nutritious Basic Moringa Soup</a></h5>
-                            <p class="card-text">A simple, affordable, and nutritious meal packed with vitamins and minerals from fresh moringa leaves. Perfect for families on a budget.</p>
-                            <a href="/recipes/evergreen/basic-moringa-soup-recipe" class="btn btn-moringa-green">View Recipe</a>
+                <!-- Card 1: Basic Soup -->
+                <div class="col-md-4 mb-4"> <!-- Added mb-4 for spacing -->
+                    <div class="card h-100"> <!-- Added h-100 for equal height cards -->
+                        <img src="/recipes/images/basic-moringa-soup.avif" class="card-img-top" alt="Nutritious Basic Moringa Soup in a bowl"> <!-- Slightly more descriptive alt -->
+                        <div class="card-body d-flex flex-column"> <!-- Added flex classes for button alignment -->
+                            <h3 class="card-title h5"><a href="/recipes/evergreen/basic-moringa-soup-recipe" title="Learn more about Basic Moringa Soup">Nutritious Basic Moringa Soup</a></h3> <!-- Changed to h3 (styled as h5 for visual consistency if needed via CSS) -->
+                            <p class="card-text">A simple, affordable, and nutritious meal packed with vitamins from fresh moringa leaves. Perfect for families.</p>
+                            <a href="/recipes/evergreen/basic-moringa-soup-recipe" class="btn btn-moringa-green mt-auto">View Recipe</a> <!-- Added mt-auto -->
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/recipes/images/pure-moringa-juice.webp" class="card-img-top" alt="Pure Moringa Juice">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/evergreen/pure-moringa-juice-recipe" title="Learn more about Pure Moringa Juice">Pure Moringa Juice</a></h5>
+                <!-- Card 2: Pure Juice -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/recipes/images/pure-moringa-juice.webp" class="card-img-top" alt="Glass of pure green Moringa Juice"> <!-- Slightly more descriptive alt -->
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/evergreen/pure-moringa-juice-recipe" title="Learn more about Pure Moringa Juice">Pure Moringa Juice</a></h3>
                             <p class="card-text">A simple, nutrient-packed moringa juice recipe for a refreshing drink or to use in smoothies, soups, and stews.</p>
-                            <a href="/recipes/evergreen/pure-moringa-juice-recipe" class="btn btn-moringa-green">View Recipe</a>
+                            <a href="/recipes/evergreen/pure-moringa-juice-recipe" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/recipes/images/moringa-tea.webp" class="card-img-top" alt="Moringa Tea">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/evergreen/how-to-make-moringa-tea-at-home" title="Learn how to make Moringa Tea">Moringa Tea</a></h5>
-                            <p class="card-text">Enjoy the health benefits of moringa with this simple and nutritious tea. Perfect for boosting energy and overall wellness!</p>
-                            <a href="/recipes/evergreen/how-to-make-moringa-tea-at-home" class="btn btn-moringa-green">View Recipe</a>
+                <!-- Card 3: Tea -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/recipes/images/moringa-tea.webp" class="card-img-top" alt="Cup of hot Moringa Tea"> <!-- Slightly more descriptive alt -->
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/evergreen/how-to-make-moringa-tea-at-home" title="Learn how to make Moringa Tea">Moringa Tea</a></h3>
+                            <p class="card-text">Enjoy the health benefits of moringa with this simple and nutritious tea. Perfect for boosting energy and wellness!</p>
+                            <a href="/recipes/evergreen/how-to-make-moringa-tea-at-home" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/recipes/images/filipino-moringa-fish-soup.webp" class="card-img-top" alt="Filipino Moringa Fish Soup">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/general/filipino-moringa-fish-soup-recipe" title="Learn more about Filipino Moringa Fish Soup">Filipino Moringa Fish Soup</a></h5>
-                            <p class="card-text">A nourishing Filipino-style fish soup with fresh moringa leaves, packed with essential nutrients for a healthy meal!</p>
-                            <a href="/recipes/general/filipino-moringa-fish-soup-recipe" class="btn btn-moringa-green">View Recipe</a>
+                <!-- Card 4: Filipino Fish Soup -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/recipes/images/filipino-moringa-fish-soup.webp" class="card-img-top" alt="Bowl of Filipino Moringa Fish Soup (Tinolang Isda)">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/general/filipino-moringa-fish-soup-recipe" title="Learn more about Filipino Moringa Fish Soup">Filipino Moringa Fish Soup</a></h3>
+                            <p class="card-text">A nourishing Filipino-style fish soup (Tinolang Isda) with fresh moringa leaves, packed with essential nutrients!</p>
+                            <a href="/recipes/general/filipino-moringa-fish-soup-recipe" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/recipes/images/moringa-juice-glowing-skin-immunity.webp" class="card-img-top" alt="Moringa Juice for Glowing Skin and Immunity">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/general/moringa-juice-for-glowing-skin-strong-immunity" title="Learn more about Moringa Juice for Skin and Immunity">Moringa Juice for Glowing Skin & Immunity</a></h5>
-                            <p class="card-text">Boost your health with this Moringa, Apple, Cucumber, and Carrot Juice! Perfect for glowing skin and a strong immune system.</p>
-                            <a href="/recipes/general/moringa-juice-for-glowing-skin-strong-immunity" class="btn btn-moringa-green">View Recipe</a>
+                <!-- Card 5: Juice for Skin/Immunity -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/recipes/images/moringa-juice-glowing-skin-immunity.webp" class="card-img-top" alt="Moringa Juice with Apple, Cucumber, and Carrot for Skin and Immunity">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/general/moringa-juice-for-glowing-skin-strong-immunity" title="Learn more about Moringa Juice for Skin and Immunity">Moringa Juice for Glowing Skin & Immunity</a></h3>
+                            <p class="card-text">Boost your health with this Moringa, Apple, Cucumber, and Carrot Juice! Supports glowing skin and a strong immune system.</p>
+                            <a href="/recipes/general/moringa-juice-for-glowing-skin-strong-immunity" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/images/moringa.webp" class="card-img-top" alt="Immunity Boosting Moringa, Orange, Carrot & Garlic Juice">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/general/immune-boosting-moringa-juice-recipe" title="Immunity Boosting Moringa Juice Recipe">Immunity Boosting Moringa, Orange, Carrot & Garlic Juice</a></h5>
-                            <p class="card-text">Boost your immune system with this vitamin-packed juice featuring moringa, orange, carrot, and garlic. A refreshing and healthy way to fight off colds and flu.</p>
-                            <a href="/recipes/general/immune-boosting-moringa-juice-recipe" class="btn btn-moringa-green">View Recipe</a>
+                <!-- Card 6: Immunity Juice -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <!-- *** IMAGE SUGGESTION: Use a specific image for THIS juice, not the generic moringa.webp *** -->
+                        <img src="/images/moringa-orange-carrot-garlic-juice.webp" class="card-img-top" alt="Immunity Boosting Moringa, Orange, Carrot & Garlic Juice"> <!-- *** Placeholder Filename - Needs update *** -->
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/general/immune-boosting-moringa-juice-recipe" title="Immunity Boosting Moringa Juice Recipe">Immunity Boosting Moringa, Orange, Carrot & Garlic Juice</a></h3>
+                            <p class="card-text">Boost your immune system with this vitamin-packed juice featuring moringa, orange, carrot, and garlic. Refreshing and healthy.</p>
+                            <a href="/recipes/general/immune-boosting-moringa-juice-recipe" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                      <img src="/recipes/images/moringa-smoothie-for-energy-no-banana.webp" class="card-img-top" alt="Moringa smoothie in a glass with mango and chia seeds">
-                      <div class="card-body">
-                        <h5 class="card-title">
+                <!-- Card 7: Smoothie -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                      <img src="/recipes/images/moringa-smoothie-for-energy-no-banana.webp" class="card-img-top" alt="Moringa smoothie in a glass with mango and chia seeds, no banana">
+                      <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5">
                           <a href="/recipes/general/moringa-smoothie-for-energy-no-banana" title="Moringa Smoothie for Energy (No Banana)">
                             Moringa Smoothie for Energy (No Banana)
                           </a>
-                        </h5>
+                        </h3>
                         <p class="card-text">
-                          An energizing banana-free moringa smoothie made with mango, almond milk, and chia seeds. Perfect for breakfast, focus, or a healthy afternoon boost.
+                          An energizing banana-free moringa smoothie with mango, almond milk, and chia seeds. Great for breakfast or focus.
                         </p>
-                        <a href="/recipes/general/moringa-smoothie-for-energy-no-banana" class="btn btn-moringa-green">View Recipe</a>
+                        <a href="/recipes/general/moringa-smoothie-for-energy-no-banana" class="btn btn-moringa-green mt-auto">View Recipe</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-md-4">
-                    <div class="card">
-                        <img src="/recipes/images/filipino-inspired-moringa-rice-bowl-recipe-uk.webp" class="card-img-top" alt="Filipino-Inspired Moringa Rice Bowl">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/general/filipino-inspired-moringa-rice-bowl" title="Filipino-Inspired Moringa Rice Bowl (UK-Friendly)">Filipino-Inspired Moringa Rice Bowl (UK-Friendly)</a></h5>
+                <!-- Card 8: Rice Bowl -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/recipes/images/filipino-inspired-moringa-rice-bowl-recipe-uk.webp" class="card-img-top" alt="Healthy Filipino-Inspired Moringa Rice Bowl">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/general/filipino-inspired-moringa-rice-bowl" title="Filipino-Inspired Moringa Rice Bowl (UK-Friendly)">Filipino-Inspired Moringa Rice Bowl (UK-Friendly)</a></h3>
                             <p class="card-text">A healthy, budget-friendly Filipino-inspired rice bowl packed with vegetables, moringa (malunggay), and adaptable UK ingredients.</p>
-                            <a href="/recipes/general/filipino-inspired-moringa-rice-bowl" class="btn btn-moringa-green">View Recipe</a>
+                            <a href="/recipes/general/filipino-inspired-moringa-rice-bowl" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/recipes/images/moringa-scrambled-eggs-on-toast-healthy-breakfast.webp" class="card-img-top" alt="Moringa Scrambled Eggs on Toast">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/general/moringa-scrambled-eggs-on-toast-recipe" title="Moringa Scrambled Eggs on Toast">Moringa Scrambled Eggs on Toast</a></h5>
-                            <p class="card-text">Start your day with this quick and nutritious Moringa Scrambled Eggs on Toast recipe! A protein-packed and healthy breakfast with a superfood twist.</p>
-                            <a href="/recipes/general/moringa-scrambled-eggs-on-toast-recipe" class="btn btn-moringa-green">View Recipe</a>
+                <!-- Card 9: Scrambled Eggs -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/recipes/images/moringa-scrambled-eggs-on-toast-healthy-breakfast.webp" class="card-img-top" alt="Moringa Scrambled Eggs on Toast - Healthy Breakfast Idea">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/general/moringa-scrambled-eggs-on-toast-recipe" title="Moringa Scrambled Eggs on Toast">Moringa Scrambled Eggs on Toast</a></h3>
+                            <p class="card-text">Start your day with this quick and nutritious Moringa Scrambled Eggs on Toast! A protein-packed breakfast with a superfood twist.</p>
+                            <a href="/recipes/general/moringa-scrambled-eggs-on-toast-recipe" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/recipes/images/filipino-inspired-moringa-rice-bowl-recipe-uk.webp" class="card-img-top" alt="Moringa Halloumi Masala in a bowl with coriander"> <!-- Assuming webp format and filename -->
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/evergreen/moringa-halloumi-masala-recipe" title="Moringa Halloumi Masala Recipe">Moringa Halloumi Masala</a></h5>
+                <!-- Card 10: Halloumi Masala -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                         <!-- *** IMAGE FIX: Ensure this path is correct and shows Halloumi Masala *** -->
+                        <img src="/recipes/images/moringa-halloumi-masala.webp" class="card-img-top" alt="Moringa Halloumi Masala curry in a bowl"> <!-- *** Placeholder Filename - Needs update *** -->
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/evergreen/moringa-halloumi-masala-recipe" title="Moringa Halloumi Masala Recipe">Moringa Halloumi Masala</a></h3>
                             <p class="card-text">A flavorful Indian curry with healthy moringa powder and halloumi cheese (or paneer). Quick, vegetarian, and delicious!</p>
-                            <a href="/recipes/evergreen/moringa-halloumi-masala-recipe" class="btn btn-moringa-green">View Recipe</a>
+                            <a href="/recipes/evergreen/moringa-halloumi-masala-recipe" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/images/moringa.webp" class="card-img-top" alt="Homemade Moringa Leaf Bread Loaf">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/recipes/evergreen/moringa-leaf-bread-recipe" title="Moringa Leaf Bread Recipe">Moringa Leaf Bread</a></h5>
+                <!-- Card 11: Leaf Bread -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                         <!-- *** IMAGE SUGGESTION: Use a specific image for THIS bread, not the generic moringa.webp *** -->
+                        <img src="/recipes/images/moringa-leaf-bread-loaf.webp" class="card-img-top" alt="Homemade Moringa Leaf Bread Loaf"> <!-- *** Placeholder Filename - Needs update *** -->
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5"><a href="/recipes/evergreen/moringa-leaf-bread-recipe" title="Moringa Leaf Bread Recipe">Moringa Leaf Bread</a></h3>
                             <p class="card-text">Bake a healthy and nutritious homemade loaf infused with the goodness of moringa leaves. Easy step-by-step recipe.</p>
-                            <a href="/recipes/evergreen/moringa-leaf-bread-recipe" class="btn btn-moringa-green">View Recipe</a>
+                            <a href="/recipes/evergreen/moringa-leaf-bread-recipe" class="btn btn-moringa-green mt-auto">View Recipe</a>
                         </div>
                     </div>
                 </div>
-                  
+
+            </div> <!-- End row -->
+        </section>
+
+        <!-- CTA Section moved inside MAIN -->
+        <section class="cta-section text-center py-5 my-5 bg-light"> <!-- Added some styling -->
+            <div class="container">
+                <h5>Have Questions About Cooking with Moringa?</h5>
+                <p>We’re here to help. Reach out to us for any inquiries, feedback, or further information on our Moringa recipes and health tips.</p>
+                <a href="/contact/" class="btn btn-moringa-green">Contact Us</a>
             </div>
         </section>
-    </main>  <section class="cta-section text-center py-5">
-        <h5>Have Questions? Contact Us!</h5>
-        <p>We’re here to help. Reach out to us for any inquiries, feedback, or further information on our Moringa recipes and health tips.</p>
-        <a href="/contact/" class="btn-moringa-green">Contact Us</a>
-    </section>
 
-    <main class="container">
-        <!-- Newsletter Signup Section -->
+        <!-- Newsletter Signup Section moved inside MAIN -->
         <section id="newsletter-signup" class="my-5 text-center">
-            <!-- MailerLite Embed Code -->
-            <div class="ml-embedded" data-form="0fLFWo"></div>
+            <div class="container">
+                 <h4>Get More Moringa Tips & Recipes!</h4>
+                 <p>Subscribe to our newsletter for the latest updates.</p>
+                <!-- MailerLite Embed Code -->
+                <div class="ml-embedded" data-form="0fLFWo"></div>
+            </div>
         </section>
-    </main>
-    
-    <footer class="text-center py-4">
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="/about/">About Us</a></li>
-            <li class="list-inline-item"><a href="/faq/faq">FAQ</a></li>
-            <li class="list-inline-item"><a href="/resources/">Resources</a></li>
-            <li class="list-inline-item"><a href="/legal/privacy-policy">Privacy Policy</a></li>
-            <li class="list-inline-item"><a href="/legal/terms-conditions">Terms & Conditions</a></li>
-            <li class="list-inline-item"><a href="/legal/cookie-policy">Cookie Policy</a></li>
-            <li class="list-inline-item"><a href="/legal/disclaimer">Disclaimer</a></li>
-        </ul>
 
-        <p class="footer-social">
-            <a href="https://www.facebook.com/flexitariansoul/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>            
-            <a href="https://www.youtube.com/@moringaeducation" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>            
-        </p>
-    
-        <p>© 2024 Moringa Education. All rights reserved.</p>
-    
-        <p>The content on this website is for informational purposes only and is not a substitute for professional medical advice. Always consult a healthcare provider for medical concerns.</p>
+    </main> <!-- *** Single MAIN element ends here *** -->
+
+    <footer class="text-center py-4">
+        <div class="container"> <!-- Added container -->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/about/" class="text-white">About Us</a></li>
+                <li class="list-inline-item"><a href="/faq/faq" class="text-white">FAQ</a></li>
+                <li class="list-inline-item"><a href="/resources/" class="text-white">Resources</a></li>
+                <li class="list-inline-item"><a href="/legal/privacy-policy" class="text-white">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="/legal/terms-conditions" class="text-white">Terms & Conditions</a></li>
+                <li class="list-inline-item"><a href="/legal/cookie-policy" class="text-white">Cookie Policy</a></li>
+                <li class="list-inline-item"><a href="/legal/disclaimer" class="text-white">Disclaimer</a></li>
+            </ul>
+
+            <p class="footer-social">
+                <a href="https://www.facebook.com/flexitariansoul/" target="_blank" rel="noopener noreferrer" class="text-white me-2">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.youtube.com/@moringaeducation" target="_blank" rel="noopener noreferrer" class="text-white">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+            </p>
+
+            <p>© 2024 Moringa Education. All rights reserved.</p>
+
+            <p class="small">The content on this website is for informational purposes only and is not a substitute for professional medical advice. Always consult a healthcare provider for medical concerns.</p>
+        </div>
     </footer>
 
     <script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Consider using Bootstrap 5 JS bundle instead of separate Popper/jQuery if not needed elsewhere -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> --> <!-- Likely not needed if using Bootstrap 5 bundle -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> --> <!-- Included in Bootstrap 5 bundle -->
+    <!-- <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> --> <!-- Use BS5 JS -->
     <script defer src="/js/scripts.js"></script>
 
 </body>
