@@ -212,6 +212,15 @@
             <guid isPermaLink="true">https://moringaeducation.org/recipes/evergreen/moringa-halloumi-masala-recipe</guid> <!-- Added isPermaLink="true" -->
         </item>
 
+        <item>
+            <title>Easy Moringa Bread Recipe: Healthy &amp; Nutritious Homemade Loaf</title>
+            <link>https://moringaeducation.org/recipes/evergreen/moringa-leaf-bread-recipe</link>
+            <description>Bake a delicious and healthy Moringa Leaf Bread at home! This easy recipe uses fresh moringa leaves for a nutritious boost. Perfect homemade bread packed with vitamins and antioxidants.</description>
+            <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate> <!-- IMPORTANT: Update with actual publication date -->
+            <category>Recipes</category>
+            <guid isPermaLink="true">https://moringaeducation.org/recipes/evergreen/moringa-leaf-bread-recipe</guid>
+        </item>
+
     </channel>
 
 </rss>
