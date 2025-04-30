@@ -203,6 +203,15 @@
             <guid>https://moringaeducation.org/recipes/general/moringa-scrambled-eggs-on-toast-recipe</guid>
         </item>
 
+        <item>
+            <title>Moringa Halloumi Masala: Indian Vegetarian Recipe (Paneer Substitute)</title>
+            <link>https://moringaeducation.org/recipes/evergreen/moringa-halloumi-masala-recipe</link>
+            <description>Discover a flavorful Indian curry made with healthy moringa powder and halloumi cheese (or paneer). This quick, vegetarian masala is packed with nutrients and easy to make!</description>
+            <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate> <!-- Updated Publication Date -->
+            <category>Recipes</category>
+            <guid isPermaLink="true">https://moringaeducation.org/recipes/evergreen/moringa-halloumi-masala-recipe</guid> <!-- Added isPermaLink="true" -->
+        </item>
+
     </channel>
 
 </rss>

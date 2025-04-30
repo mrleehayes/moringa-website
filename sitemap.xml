@@ -153,7 +153,7 @@
   <priority>0.6</priority> 
 </url>
 <url>
-    <loc>https://moringaeducation.org/blog/general/moringa-for-diabetes-control-lower-blood_sugar</loc>
+    <loc>https://moringaeducation.org/blog/general/moringa-for-diabetes-control-lower-blood-sugar</loc>
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -209,5 +209,11 @@
     <lastmod>2025-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://moringaeducation.org/recipes/evergreen/moringa-halloumi-masala-recipe</loc>
+  <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 </urlset>
