@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moringa Nutrition Calculator - Moringa Education</title>
     <meta name="description" content="Calculate the nutritional value of your meals with moringa and other common ingredients. Plan healthy, affordable meals with our easy-to-use tool.">
-    <meta name="keywords" content="moringa nutrition calculator, moringa meal planner, moringa benefits, healthy recipes, nutrition facts">
+    <meta name="keywords" content="moringa nutrition calculator, moringa meal planner, moringa benefits, healthy recipes, nutrition facts, affordable ingredients, asia, africa">
     <!-- Make sure this canonical URL is correct for the calculator page -->
     <link rel="canonical" href="https://moringaeducation.org/moringa-nutrition-calculator"> 
     
@@ -22,8 +22,8 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></noscript>
 
     <!-- Your Site's Main CSS -->
-    <!-- Assuming path from root is /css/cleaned.css -->
-    <link rel="stylesheet" href="/css/cleaned.css"> 
+    <link rel="preload" href="/css/cleaned.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+<noscript><link rel="stylesheet" href="/css/cleaned.css"></noscript>
 
     <!-- Tailwind CSS CDN (still used for some layout within React component) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
@@ -50,12 +50,12 @@
       "mainEntity": {
         "@type": "HowToTool",
         "name": "Moringa Nutrition Calculator",
-        "description": "An interactive tool to calculate the nutritional content of meals including moringa.",
+        "description": "An interactive tool to calculate the nutritional content of meals including moringa and other locally available ingredients.",
         "step": [
           {
             "@type": "HowToStep",
             "name": "Search Ingredient",
-            "text": "Type the name of an ingredient (e.g., 'moringa leaves', 'rice') into the search bar."
+            "text": "Type the name of an ingredient (e.g., 'moringa leaves', 'rice', 'sorghum') into the search bar."
           },
           {
             "@type": "HowToStep",
@@ -240,11 +240,18 @@
                      <div class="card mb-4">
                         <div class="card-body">
                             <h3 class="card-title"><i class="fas fa-dollar-sign text-moringa-green mr-2"></i>Balance Nutrition & Cost</h3>
-                            <p class="card-text">Make informed decisions to create cost-effective, nutritious meals.</p>
+                            <p class="card-text">Make informed decisions to create cost-effective, nutritious meals using locally available ingredients.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Add more cards if needed -->
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                       <div class="card-body">
+                           <h3 class="card-title"><i class="fas fa-seedling text-moringa-green mr-2"></i>Discover Local Superfoods</h3>
+                           <p class="card-text">Explore the nutritional benefits of common staples and local produce from Asia and Africa to enhance your diet.</p>
+                       </div>
+                   </div>
+               </div>
             </div>
             <!-- mt-4 is Bootstrap, if not defined, use margin-top in style -->
             <div class="text-center mt-4"> 
@@ -288,40 +295,63 @@
     );
 
     const NutritionCalculator = () => {
-      {/* Nutrition data and dailyRecommended remain the same */}
       const nutritionData = {
+        // Moringa Products
         "moringa leaves (fresh)": { protein: 6.7, vitA: 378, vitC: 51.7, calcium: 185, iron: 4, calories: 64, cost: 1 },
         "moringa leaves (dried)": { protein: 27.1, vitA: 1890, vitC: 17.3, calcium: 2003, iron: 28.2, calories: 205, cost: 2 },
         "moringa powder": { protein: 25, vitA: 1600, vitC: 15, calcium: 1897, iron: 25, calories: 330, cost: 3 },
-        "rice": { protein: 2.7, vitA: 0, vitC: 0, calcium: 28, iron: 0.5, calories: 130, cost: 1.5 },
-        "beans": { protein: 8.7, vitA: 0, vitC: 0, calcium: 123, iron: 2.1, calories: 127, cost: 1.5 },
-        "lentils": { protein: 9, vitA: 0, vitC: 1.5, calcium: 19, iron: 3.3, calories: 116, cost: 1.8 },
-        "spinach": { protein: 2.9, vitA: 469, vitC: 28, calcium: 99, iron: 2.7, calories: 23, cost: 2 },
-        "sweet potato": { protein: 1.6, vitA: 709, vitC: 2.4, calcium: 30, iron: 0.6, calories: 86, cost: 1.2 },
-        "eggs": { protein: 12.6, vitA: 140, vitC: 0, calcium: 56, iron: 1.8, calories: 143, cost: 3 },
-        "banana": { protein: 1.1, vitA: 3, vitC: 8.7, calcium: 5, iron: 0.3, calories: 89, cost: 1 },
-        "tomato": { protein: 0.9, vitA: 42, vitC: 13.7, calcium: 10, iron: 0.3, calories: 18, cost: 1.5 },
-        "onion": { protein: 1.1, vitA: 0, vitC: 7.4, calcium: 23, iron: 0.2, calories: 40, cost: 1 },
-        "carrot": { protein: 0.9, vitA: 835, vitC: 5.9, calcium: 33, iron: 0.3, calories: 41, cost: 1.2 },
-        "millet": { protein: 11, vitA: 0, vitC: 0, calcium: 8, iron: 3, calories: 378, cost: 1.3 },
-        "cassava": { protein: 1.4, vitA: 1, vitC: 20, calcium: 16, iron: 0.3, calories: 160, cost: 0.8 },
-        "peanuts": { protein: 25.8, vitA: 0, vitC: 0, calcium: 92, iron: 4.6, calories: 567, cost: 2.5 }
+        
+        // Grains & Cereals (raw values per 100g)
+        "rice (white, raw)": { protein: 7.1, vitA: 0, vitC: 0, calcium: 28, iron: 0.8, calories: 365, cost: 0.8 },
+        "maize meal (whole, raw)": { protein: 9, vitA: 7, vitC: 0, calcium: 7, iron: 2.7, calories: 360, cost: 1.0 },
+        "millet (raw)": { protein: 11, vitA: 0, vitC: 0, calcium: 8, iron: 3, calories: 378, cost: 1.3 },
+        "sorghum (raw)": { protein: 10.5, vitA: 0, vitC: 0, calcium: 28, iron: 4, calories: 335, cost: 1.2 },
+        "fonio (raw)": { protein: 8, vitA: 0, vitC: 0, calcium: 45, iron: 4.5, calories: 365, cost: 1.6 },
+
+        // Legumes & Pulses (raw values per 100g)
+        "beans (common, raw)": { protein: 22, vitA: 0, vitC: 1, calcium: 140, iron: 5, calories: 340, cost: 1.5 },
+        "lentils (raw)": { protein: 25, vitA: 2, vitC: 4, calcium: 56, iron: 7.5, calories: 352, cost: 1.8 },
+        "chickpeas (raw)": { protein: 19.5, vitA: 3, vitC: 4, calcium: 105, iron: 6.2, calories: 364, cost: 1.7 },
+        "cowpeas (raw)": { protein: 23.5, vitA: 2, vitC: 1.5, calcium: 110, iron: 8.1, calories: 336, cost: 1.6 },
+        "peanuts (raw)": { protein: 25.8, vitA: 0, vitC: 0, calcium: 92, iron: 4.6, calories: 567, cost: 2.5 },
+
+        // Vegetables (raw per 100g, unless specified)
+        "spinach (raw)": { protein: 2.9, vitA: 469, vitC: 28, calcium: 99, iron: 2.7, calories: 23, cost: 2 },
+        "sweet potato (raw)": { protein: 1.6, vitA: 709, vitC: 2.4, calcium: 30, iron: 0.6, calories: 86, cost: 1.2 },
+        "tomato (raw)": { protein: 0.9, vitA: 42, vitC: 13.7, calcium: 10, iron: 0.3, calories: 18, cost: 1.5 },
+        "onion (raw)": { protein: 1.1, vitA: 0, vitC: 7.4, calcium: 23, iron: 0.2, calories: 40, cost: 1 },
+        "carrot (raw)": { protein: 0.9, vitA: 835, vitC: 5.9, calcium: 33, iron: 0.3, calories: 41, cost: 1.2 },
+        "cassava (root, raw)": { protein: 1.4, vitA: 1, vitC: 20, calcium: 16, iron: 0.3, calories: 160, cost: 0.8 },
+        "cassava leaves (cooked)": { protein: 7, vitA: 1000, vitC: 35, calcium: 200, iron: 2.5, calories: 92, cost: 0.8 }, // Cooked, as raw is toxic
+        "amaranth leaves (raw)": { protein: 3, vitA: 320, vitC: 42, calcium: 215, iron: 2.3, calories: 26, cost: 1.5 },
+        "okra (raw)": { protein: 1.9, vitA: 36, vitC: 23, calcium: 82, iron: 0.6, calories: 33, cost: 1.8 },
+        "eggplant (raw)": { protein: 1, vitA: 1, vitC: 2.2, calcium: 9, iron: 0.23, calories: 25, cost: 1.7 },
+        "pumpkin (flesh, raw)": { protein: 1, vitA: 426, vitC: 9, calcium: 21, iron: 0.8, calories: 26, cost: 1.0 },
+        "yam (raw)": { protein: 1.5, vitA: 7, vitC: 17, calcium: 17, iron: 0.5, calories: 118, cost: 0.9 },
+        
+        // Fruits (raw per 100g)
+        "banana (raw)": { protein: 1.1, vitA: 3, vitC: 8.7, calcium: 5, iron: 0.3, calories: 89, cost: 1 },
+        "mango (ripe, raw)": { protein: 0.8, vitA: 54, vitC: 36.4, calcium: 11, iron: 0.16, calories: 60, cost: 1.3 },
+        "papaya (ripe, raw)": { protein: 0.5, vitA: 47, vitC: 60.9, calcium: 20, iron: 0.25, calories: 43, cost: 1.4 },
+
+        // Animal Products & Seeds
+        "eggs (whole, raw)": { protein: 12.6, vitA: 140, vitC: 0, calcium: 56, iron: 1.8, calories: 143, cost: 3 },
+        "small dried fish": { protein: 62, vitA: 50, vitC: 0, calcium: 1200, iron: 6, calories: 300, cost: 2.8 },
+        "sesame seeds (toasted)": { protein: 17.5, vitA: 0, vitC: 0, calcium: 975, iron: 14.5, calories: 570, cost: 2.2 }
       };
       const dailyRecommended = { protein: 50, vitA: 900, vitC: 90, calcium: 1000, iron: 18, calories: 2000 };
       
-      {/* State hooks remain the same */}
       const [searchTerm, setSearchTerm] = React.useState('');
       const [selectedIngredients, setSelectedIngredients] = React.useState([]);
       const [filteredIngredients, setFilteredIngredients] = React.useState([]);
       const [totalNutrition, setTotalNutrition] = React.useState({ protein: 0, vitA: 0, vitC: 0, calcium: 0, iron: 0, calories: 0, cost: 0 });
 
-      {/* useEffect hooks remain the same */}
       React.useEffect(() => {
         const filtered = Object.keys(nutritionData).filter(ingredient =>
           ingredient.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+        ).sort(); // Added sort for alphabetical listing
         setFilteredIngredients(filtered);
-      }, [searchTerm]);
+      }, [searchTerm, nutritionData]); // Added nutritionData to dependency array, though it's constant
 
       React.useEffect(() => {
         const totals = { protein: 0, vitA: 0, vitC: 0, calcium: 0, iron: 0, calories: 0, cost: 0 };
@@ -329,7 +359,7 @@
           const { name, amount } = item;
           const data = nutritionData[name];
           if (data && parseFloat(amount) > 0) {
-            const factor = parseFloat(amount) / 100;
+            const factor = parseFloat(amount) / 100; // Data is per 100g
             Object.keys(data).forEach(key => {
               if (totals.hasOwnProperty(key)) {
                 totals[key] += data[key] * factor;
@@ -338,9 +368,8 @@
           }
         });
         setTotalNutrition(totals);
-      }, [selectedIngredients]);
+      }, [selectedIngredients, nutritionData]); // Added nutritionData to dependency array
 
-      {/* Helper functions (addIngredient, updateAmount, removeIngredient, calculatePercentage, getSuggestions) remain the same */}
        const addIngredient = (name) => {
         if (!selectedIngredients.find(ing => ing.name === name)) {
             setSelectedIngredients([...selectedIngredients, { name, amount: 100 }]);
@@ -349,7 +378,7 @@
       };
 
       const updateAmount = (index, amount) => {
-        const newAmount = Math.max(0, Number(amount));
+        const newAmount = Math.max(0, Number(amount)); // Ensure amount is not negative
         const updated = [...selectedIngredients];
         updated[index] = { ...updated[index], amount: newAmount };
         setSelectedIngredients(updated);
@@ -368,39 +397,40 @@
 
       const getSuggestions = () => {
         const suggestions = [];
-        {/* Using text-moringa-green for emphasis in suggestions might be too much, keeping it simple. */}
-        if (calculatePercentage('protein', totalNutrition.protein) < 30) suggestions.push("Consider adding more protein: moringa powder, beans, lentils, or eggs.");
-        if (calculatePercentage('vitA', totalNutrition.vitA) < 30) suggestions.push("Boost Vitamin A with: moringa leaves, carrots, or sweet potatoes.");
-        if (calculatePercentage('iron', totalNutrition.iron) < 30) suggestions.push("Increase iron intake with: moringa powder, lentils, or spinach.");
-        if (calculatePercentage('vitC', totalNutrition.vitC) < 30) suggestions.push("Add Vitamin C sources like: fresh moringa leaves, tomatoes, or citrus fruits.");
-        if (calculatePercentage('calcium', totalNutrition.calcium) < 30) suggestions.push("Enhance calcium with: moringa (dried/powder), spinach, or fortified foods.");
+        if (calculatePercentage('protein', totalNutrition.protein) < 30) suggestions.push("Consider adding more protein: moringa powder, beans, lentils, eggs, small dried fish, or peanuts.");
+        if (calculatePercentage('vitA', totalNutrition.vitA) < 30) suggestions.push("Boost Vitamin A with: moringa leaves, cassava leaves, carrots, sweet potatoes, or pumpkin.");
+        if (calculatePercentage('iron', totalNutrition.iron) < 30) suggestions.push("Increase iron intake with: moringa powder, lentils, sesame seeds, cowpeas, or small dried fish.");
+        if (calculatePercentage('vitC', totalNutrition.vitC) < 30) suggestions.push("Add Vitamin C sources like: fresh moringa leaves, papaya, mango, tomatoes, or amaranth leaves.");
+        if (calculatePercentage('calcium', totalNutrition.calcium) < 30) suggestions.push("Enhance calcium with: moringa (dried/powder), sesame seeds, small dried fish, amaranth leaves, or fortified foods.");
+        if (totalNutrition.calories < 300 && selectedIngredients.length > 0 && totalNutrition.calories > 0) suggestions.push("This meal is low in calories. Consider increasing portion sizes or adding energy-dense foods like grains (rice, maize), tubers (yam, cassava), or healthy fats (peanuts, sesame seeds).");
+
         return suggestions;
       };
 
       return (
-        <div className="calculator-container-main"> {/* Main container with site's section-like style */}
+        <div className="calculator-container-main">
           <h2 style={{ color: '#3c763d', textAlign: 'center', fontSize: '1.8rem', marginBottom: '0.5rem' }}>
             Meal Nutrition Calculator
           </h2>
           <p style={{ textAlign: 'center', fontSize: '1.1rem', color: '#555', marginBottom: '1.5rem' }}>
-            Build your meal below to see its nutritional profile and estimated cost.
+            Build your meal below to see its nutritional profile and estimated cost. Values are per 100g of ingredient.
           </p>
           
-          <div className="md:grid md:grid-cols-2 md:gap-6"> {/* Tailwind grid for layout */}
+          <div className="md:grid md:grid-cols-2 md:gap-6">
             
-            <div className="space-y-4"> {/* Tailwind for spacing child elements */}
+            <div className="space-y-4">
               <div className="calculator-section-card">
                 <h3 style={{ fontSize: '1.25rem', color: '#3c763d', marginBottom: '0.75rem' }}>Add Ingredients</h3>
-                <div className="relative"> {/* For positioning the dropdown */}
+                <div className="relative">
                   <div className="flex items-center" style={{ border: '1px solid #ccc', borderRadius: '4px', paddingLeft: '0.5rem' }}>
                     <SearchIcon />
                     <input
                       type="text"
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
-                      placeholder="Search ingredients (e.g., moringa)"
-                      className="calculator-input" /* Custom class for input styling */
-                      style={{ border: 'none', outline: 'none', flexGrow: 1 }} /* Override Tailwind defaults if needed */
+                      placeholder="Search ingredients (e.g., moringa, rice)"
+                      className="calculator-input"
+                      style={{ border: 'none', outline: 'none', flexGrow: 1 }}
                     />
                   </div>
                   
@@ -411,7 +441,7 @@
                           <div
                             key={ingredient}
                             onClick={() => addIngredient(ingredient)}
-                            className="search-result-item" /* Custom class for hover/padding */
+                            className="search-result-item"
                           >
                             {ingredient}
                           </div>
@@ -427,22 +457,22 @@
               {selectedIngredients.length > 0 && (
                 <div className="calculator-section-card">
                   <h3 style={{ fontSize: '1.25rem', color: '#3c763d', marginBottom: '0.75rem' }}>Selected Ingredients</h3>
-                  <div className="space-y-3"> {/* Tailwind for spacing */}
+                  <div className="space-y-3">
                     {selectedIngredients.map((item, index) => (
                       <div key={index} className="selected-ingredient-item flex items-center justify-between">
-                        <span style={{ fontWeight: 500, color: '#333' }}>{item.name}</span>
-                        <div className="flex items-center">
+                        <span style={{ fontWeight: 500, color: '#333', flexShrink: 1, marginRight: '0.5rem' }}>{item.name}</span>
+                        <div className="flex items-center flex-shrink-0">
                           <input
                             type="number"
                             min="1"
                             value={item.amount}
                             onChange={(e) => updateAmount(index, e.target.value)}
-                            className="calculator-input-amount w-16 mr-2" /* Custom class and Tailwind width */
+                            className="calculator-input-amount w-20 mr-2" 
                           />
                           <span className="mr-3" style={{ fontSize: '0.9rem', color: '#555' }}>grams</span>
                           <button
                             onClick={() => removeIngredient(index)}
-                            className="btn-remove-ingredient" /* Custom class for remove button */
+                            className="btn-remove-ingredient"
                             title={`Remove ${item.name}`}
                           >
                              <i className="fas fa-times"></i>
@@ -459,21 +489,21 @@
               {selectedIngredients.length > 0 && (
                 <div className="calculator-section-card">
                   <h3 style={{ fontSize: '1.25rem', color: '#3c763d', marginBottom: '0.75rem' }}>Nutrition Summary</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3"> {/* Tailwind grid */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
                     {Object.keys(totalNutrition).filter(n => n !== 'cost').map(nutrientKey => (
                       <div key={nutrientKey}>
                         <div className="flex justify-between items-baseline mb-0.5">
                             <h4 style={{ fontWeight: 500, fontSize: '0.95rem', color: '#444' }} className="capitalize">
-                                {nutrientKey.replace('vit', 'Vitamin ')}
+                                {nutrientKey.replace('vitA', 'Vitamin A').replace('vitC', 'Vitamin C')}
                             </h4>
                             <span style={{ fontSize: '0.9rem', color: '#555' }}>
-                                {totalNutrition[nutrientKey].toFixed(nutrientKey === 'calories' ? 0 : nutrientKey === 'vitA' ? 0 : 1)}
+                                {totalNutrition[nutrientKey].toFixed(nutrientKey === 'calories' || nutrientKey === 'vitA' ? 0 : 1)}
                                 {nutrientKey === 'protein' ? 'g' : nutrientKey === 'vitA' ? 'µg' : nutrientKey === 'vitC' ? 'mg' : nutrientKey === 'calcium' ? 'mg' : nutrientKey === 'iron' ? 'mg' : ' kcal'}
                             </span>
                         </div>
-                        <div className="progress-bar-track"> {/* Custom class for track */}
+                        <div className="progress-bar-track">
                           <div 
-                            className="progress-bar-fill-moringa" /* Custom class for fill */
+                            className="progress-bar-fill-moringa"
                             style={{ width: `${Math.min(calculatePercentage(nutrientKey, totalNutrition[nutrientKey]), 100)}%` }}
                           ></div>
                         </div>
@@ -486,7 +516,7 @@
                   
                   <div style={{ marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid #eee' }}>
                     <p style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>
-                        Estimated Cost: <span className="text-moringa-green">${totalNutrition.cost.toFixed(2)}</span>
+                        Estimated Relative Cost: <span className="text-moringa-green">{totalNutrition.cost.toFixed(2)} units</span>
                     </p>
                   </div>
                 </div>
@@ -503,9 +533,9 @@
                 </div>
               )}
               {selectedIngredients.length > 0 && getSuggestions().length === 0 && (
-                 <div className="calculator-section-card text-center" style={{ padding: '1.5rem' }}> {/* Tailwind text-center */}
-                    <p className="text-moringa-green font-semibold"> {/* Tailwind font-semibold */}
-                        <i className="fas fa-check-circle mr-2"></i>Excellent! This meal has a good nutritional balance.
+                 <div className="calculator-section-card text-center" style={{ padding: '1.5rem' }}>
+                    <p className="text-moringa-green font-semibold">
+                        <i className="fas fa-check-circle mr-2"></i>Excellent! This meal appears to have a good nutritional balance based on the information provided.
                     </p>
                  </div>
               )}
@@ -513,16 +543,16 @@
           </div>
 
           {selectedIngredients.length === 0 && (
-            <div className="text-center placeholder-info" style={{ marginTop: '1.5rem' }}> {/* Tailwind text-center */}
-                <i className="fas fa-utensils fa-2x mb-3"></i> {/* Changed icon */}
+            <div className="text-center placeholder-info" style={{ marginTop: '1.5rem' }}>
+                <i className="fas fa-utensils fa-2x mb-3"></i>
                 <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>Start building your meal!</p>
-                <p style={{ fontSize: '0.9rem' }}>Search for ingredients above to add them to your list.</p>
+                <p style={{ fontSize: '0.9rem' }}>Search for ingredients above to add them to your list. Nutritional data is per 100g of the ingredient.</p>
             </div>
           )}
 
           <div style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.85rem', color: '#777' }}>
-            <p>Nutritional values are estimates. Daily Values (DV) are based on general recommendations.</p>
-            <p>This calculator is for informational purposes and not a substitute for professional dietary advice.</p>
+            <p>Nutritional values are estimates per 100g of ingredient (raw, unless specified). Daily Values (DV) are based on general recommendations for adults.</p>
+            <p>Cost is a relative unit for comparison. This calculator is for informational purposes and not a substitute for professional dietary advice.</p>
           </div>
         </div>
       );
