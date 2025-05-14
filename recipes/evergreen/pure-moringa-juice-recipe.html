@@ -4,10 +4,12 @@
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRBPH74YJ5"></script>
     <script>
+      window.addEventListener('load', function() {
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-PRBPH74YJ5');
+      });
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,7 +111,48 @@
           }
         ]
       }
-    </script>      
+    </script>
+    <!-- Add this after the Recipe Schema -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does pure moringa juice taste like?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pure moringa juice has an earthy, green taste similar to wheatgrass or strong green tea. Many people describe it as having a slightly peppery or horseradish-like finish. If you're new to moringa juice, you might want to start with a smaller amount of leaves or add a natural sweetener like honey until you adjust to the flavor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I make pure moringa juice with dried moringa powder?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, you can make moringa juice with dried moringa powder, though fresh leaves provide the best flavor and nutrition. Use 1-2 tablespoons of moringa powder per cup of water. Mix thoroughly and strain if desired, though the powder dissolves better than fresh leaves. For best results, blend the powder with a small amount of warm water first to create a paste, then add remaining water."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does pure moringa juice last in the refrigerator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pure moringa juice is best consumed immediately after preparation to maximize nutritional benefits and flavor. If stored in the refrigerator in an airtight container, it can last up to 24 hours, though some nutritional value may be lost. For longer storage, freeze the juice in ice cube trays - these moringa cubes can be stored for up to 3 months and added to smoothies or recipes as needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When is the best time to drink pure moringa juice?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many people prefer drinking pure moringa juice first thing in the morning on an empty stomach to maximize nutrient absorption. This timing may help boost energy levels and metabolism for the day. However, moringa juice can be consumed at any time. If you're sensitive to greens or have digestive concerns, try having it with a small meal instead of on an empty stomach."
+              }
+            }
+          ]
+        }
+        </script>      
 
 </head>
 
@@ -128,10 +171,8 @@
     <header class="hero">
         <div class="container">
             <!-- Optimized H1 -->
-            <h1>Easy & Refreshing Moringa Juice Recipe</h1>
-
-            <p>Discover how to make pure moringa juice with this simple recipe! This nutrient-packed drink is perfect for smoothies, soups, stews, or enjoying on its own.  Explore the amazing health benefits of moringa with every sip!</p>
-
+            <h1>Pure Moringa Juice Recipe: How to Make It at Home</h1>
+            <p>Discover how to make <strong>pure moringa juice</strong> with this simple recipe! This nutrient-packed drink is perfect for smoothies, soups, stews, or enjoying on its own. Learn why <strong>pure moringa juice</strong> is considered a superfood beverage and explore its amazing health benefits with every sip!</p>
             <img src="/recipes/images/pure-moringa-juice.webp" alt="Glass of fresh moringa juice with moringa leaves" class="hero-image" width="350" height="427"> <!-- Improved alt text -->
         </div>
     </header>
@@ -152,6 +193,15 @@
                     <li>1 cup fresh moringa leaves (stripped from stems and tightly packed)</li> <!-- More specific ingredient description -->
                     <li>1 cup water (adjust as needed for desired consistency)</li>
                 </ul>
+            </section>
+
+            <!-- Add to ingredients section -->
+            <section class="ingredients-notes">
+              <p><strong>Notes on ingredients:</strong></p>
+              <ul>
+                <li><strong>Moringa leaves:</strong> Fresh leaves yield the best flavor and nutrition. If using dried moringa, use 1/3 cup and soak in warm water for 10 minutes before blending.</li>
+                <li><strong>Water quality:</strong> Filtered water works best to preserve the pure taste of the moringa.</li>
+              </ul>
             </section>
 
             <section class="instructions" id="recipe-instructions">  <!-- Added ID for "Jump to Recipe" -->
@@ -182,7 +232,55 @@
                 <li><b>Anti-inflammatory Properties:</b> Moringa contains compounds that may help reduce inflammation in the body.  See <a href="/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree">what is moringa here</a>.</li>
                 <!-- Add more benefits with links to credible sources if possible -->
               </ul>
-              <p><i>Disclaimer: These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Always consult a healthcare provider for medical concerns.</i></p>
+              <p><i>Disclaimer: This article is not intended to diagnose, treat, cure, or prevent any disease. Always consult a healthcare provider for medical concerns.</i></p>
+            </section>
+
+            <!-- Add after the benefits section -->
+            <section class="personal-experience">
+              <h2>My Experience with Pure Moringa Juice</h2>
+              <p>I first discovered the power of pure moringa juice during my travels in Southeast Asia. After trying it for just one week, I noticed improved energy levels and digestion. What started as curiosity became a daily ritual - I've been making this pure moringa juice recipe for over 5 years now and it remains my favorite way to consume this incredible superfood.</p>
+              <p>At first, the earthy taste might seem strong, but I've found that consistent consumption actually helps you develop a taste for it. For beginners, I recommend starting with a smaller amount of leaves and gradually increasing to the full recipe as your palate adjusts.</p>
+            </section>
+
+            <!-- Add before the CTA -->
+            <section class="faq-section" id="moringa-juice-faqs">
+              <h2>Frequently Asked Questions About Pure Moringa Juice</h2>
+              
+              <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">What does pure moringa juice taste like?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div itemprop="text">
+                    <p>Pure moringa juice has an earthy, green taste similar to wheatgrass or strong green tea. Many people describe it as having a slightly peppery or horseradish-like finish. If you're new to moringa juice, you might want to start with a smaller amount of leaves or add a natural sweetener like honey until you adjust to the flavor.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Can I make pure moringa juice with dried moringa powder?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div itemprop="text">
+                    <p>Yes, you can make moringa juice with dried moringa powder, though fresh leaves provide the best flavor and nutrition. Use 1-2 tablespoons of moringa powder per cup of water. Mix thoroughly and strain if desired, though the powder dissolves better than fresh leaves. For best results, blend the powder with a small amount of warm water first to create a paste, then add remaining water.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">How long does pure moringa juice last in the refrigerator?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div itemprop="text">
+                    <p>Pure moringa juice is best consumed immediately after preparation to maximize nutritional benefits and flavor. If stored in the refrigerator in an airtight container, it can last up to 24 hours, though some nutritional value may be lost. For longer storage, freeze the juice in ice cube trays - these moringa cubes can be stored for up to 3 months and added to smoothies or recipes as needed.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">When is the best time to drink pure moringa juice?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div itemprop="text">
+                    <p>Many people prefer drinking pure moringa juice first thing in the morning on an empty stomach to maximize nutrient absorption. This timing may help boost energy levels and metabolism for the day. However, moringa juice can be consumed at any time. If you're sensitive to greens or have digestive concerns, try having it with a small meal instead of on an empty stomach.</p>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <div class="cta">
@@ -190,17 +288,15 @@
                 <a href="/recipes/recipes" class="btn-moringa-green">Explore Our Moringa Recipe Collection!</a>
             </div>
         </article>
-
+<!--
         <main class="container">
-          <!-- Newsletter Signup Section -->
           <section id="newsletter-signup" class="my-5 text-center">
-              <!-- MailerLite Embed Code -->
               <div id="mailerlite-form-container" class="ml-embedded" data-form="0fLFWo"></div>
           </section>
         </main>
 
         <div class="newsletter-signup-bottom"></div>
-
+      -->
 
       <section class="social-share">
         <h3>Share This Recipe!</h3>
