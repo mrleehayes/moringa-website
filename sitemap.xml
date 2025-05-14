@@ -222,4 +222,10 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 </url>
+<url>
+    <loc>https://moringaeducation.org/moringa-nutrition-calculator</loc>
+    <lastmod>2025-05-14T10:00:00+00:00</lastmod> <!-- IMPORTANT: Update this to the actual date/time you publish or last significantly updated the calculator page -->
+    <changefreq>monthly</changefreq> <!-- Or "weekly" if you anticipate frequent updates to data/text -->
+    <priority>0.8</priority> <!-- This is a key tool, so a higher priority is good -->
+</url>
 </urlset>
