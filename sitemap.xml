@@ -138,7 +138,7 @@
 </url>
 <url>
   <loc>https://moringaeducation.org/blog/evergreen/moringa-affordable-uses-water-fertilizer-income</loc>
-  <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+  <lastmod>2025-06-14T00:00:00+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
   <image:image>
@@ -218,14 +218,14 @@
 </url>
 <url>
     <loc>https://moringaeducation.org/recipes/evergreen/moringa-leaf-bread-recipe</loc>
-    <lastmod>2025-04-30T00:00:00+00:00</lastmod> <!-- Updated to reflect creation/update date -->
+    <lastmod>2025-04-30T00:00:00+00:00</lastmod> 
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/moringa-nutrition-calculator</loc>
-    <lastmod>2025-05-14T10:00:00+00:00</lastmod> <!-- IMPORTANT: Update this to the actual date/time you publish or last significantly updated the calculator page -->
-    <changefreq>monthly</changefreq> <!-- Or "weekly" if you anticipate frequent updates to data/text -->
-    <priority>0.8</priority> <!-- This is a key tool, so a higher priority is good -->
+    <lastmod>2025-05-14T10:00:00+00:00</lastmod> 
+    <changefreq>monthly</changefreq> 
+    <priority>0.8</priority> 
 </url>
 </urlset>
