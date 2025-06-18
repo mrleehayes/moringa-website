@@ -68,7 +68,7 @@
 <body>
     <nav>
         <ul>
-            <li><strong><a href="/">Moringa Education</a></strong></li>
+            <li><a href="/" class="navbar-brand">Moringa Education</a></li>
             <li><a href="/recipes/recipes">Recipes</a></li>
             <li><a href="/videos/videos">Videos</a></li>
             <li><a href="/blog/">Blog</a></li>
@@ -77,50 +77,52 @@
     </nav>
 
     <header class="text-center my-5">
-        <!-- Improved H1 - Keyword Richer -->
         <h1>Unlock the Nutritional Power of Moringa</h1>
-        <p>Learn how Moringa can improve health, combat malnutrition, and support sustainable living.</p>
+        <!-- INTERNAL LINKS -->
+        <p>Your guide to improving health, combating malnutrition, and supporting sustainable living with the miracle tree</a>.</p>
     </header>
 
-    <section id="blog-list" class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <!-- == LCP Image Optimization == -->
-                    <picture>
-                        
-                        <!-- Serve WebP as next option (Ensure /images/moringa-tree.webp is optimized) -->
-                        <source srcset="/images/moringa-tree.webp" type="image/webp">
-                        <!-- Fallback Image (WebP or optimized JPG) -->
-                        <!-- Added fetchpriority="high" to prioritize download -->
-                        <!-- Removed loading="lazy" (LCP element should load eagerly) -->
-                        <!-- Kept width/height for layout stability -->
-                        <img src="/images/moringa-tree.webp"
-                             class="card-img-top"
-                             alt="Vibrant Moringa leaves on a branch"
-                             width="600"
-                             height="400"
-                             fetchpriority="high">
-                    </picture>
-                    <!-- == End LCP Image Optimization == -->
-                    <div class="card-body">
-                        <p class="card-text">At Moringa Education, we are dedicated to empowering families with the knowledge they need to unlock the incredible health, nutritional, and environmental benefits of moringa.</p>
-                        <!-- More Specific Call to Action -->
-                        <a href="/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree" class="btn btn-moringa-green">Discover Moringa's Amazing Health Benefits</a>
+    <main class="container">
+        
+        <section id="intro" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <picture>
+                            <source srcset="/images/moringa-tree.webp" type="image/webp">
+                            <img src="/images/moringa-tree.webp"
+                                 class="card-img-top"
+                                 alt="Vibrant Moringa leaves on a branch representing the miracle tree"
+                                 width="600"
+                                 height="400"
+                                 fetchpriority="high">
+                        </picture>
+                        <div class="card-body">
+                            <!-- INTERNAL LINKS -->
+                            <p class="card-text">At Moringa Education, we empower families with knowledge about the incredible 
+                               <a href="/blog/evergreen/10-surprising-benefits-of-moringa">health</a>, 
+                               <a href="/moringa-nutrition-calculator">nutritional</a>, 
+                               and environmental benefits of moringa.</p>
+                            <a href="/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree" class="btn btn-moringa-green">Discover Moringa's Amazing Health Benefits</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>    
+        </section>
 
-    <main class="container">
-        <section id="about" class="text-center my-5">
-            <h2>What We Offer</h2>
-            <p>Discover how Moringa supports better nutrition, combats malnutrition, and contributes to sustainable living. Our resources include educational videos, easy recipes, and expert guides on cultivating and using Moringa.</p>
+        <section id="what-we-offer" class="my-5">
+            <h2 class="text-center">Moringa Recipes, Guides, and Videos</h2>
+            <!-- INTERNAL LINKS -->
+            <p class="text-center">Our resources include 
+                <a href="/videos/videos">educational videos</a>, 
+                <a href="/recipes/recipes">easy recipes</a>, 
+                and expert guides on <a href="/blog/evergreen/how-to-grow-moringa">cultivating</a> and 
+                <a href="/blog/evergreen/moringa-easy-ways-to-add-to-diet">using Moringa</a> to support better nutrition and sustainable living.
+            </p>
             <ul class="list-unstyled">
-                <li><strong><a href="/videos/videos"><i class="fas fa-video"></i> Moringa Education Videos:</a></strong> Watch inspiring videos that teach you about moringa's transformative power.</li>
-                <li><strong><a href="/recipes/recipes"><i class="fas fa-utensils"></i> Moringa Recipes:</a></strong> Discover easy and nutritious ways to incorporate moringa into your meals. Try our delicious and healthy <a href="/recipes/evergreen/basic-moringa-soup-recipe">Moringa Soup Recipe</a>.</li>
-                <li><strong><a href="/resources/"><i class="fas fa-external-link-alt"></i> Moringa Resources & Guides:</a></strong> Explore comprehensive guides for growing and using moringa. Learn about <a href="/blog/evergreen/moringa-local-names-benefits">Moringa's Local Names and Traditional Uses</a>.</li>
+                <li><strong><a href="/videos/videos"><i class="fas fa-video"></i> Educational Videos:</a></strong> Watch inspiring videos that teach you about moringa's transformative power.</li>
+                <li><strong><a href="/recipes/recipes"><i class="fas fa-utensils"></i> Nutritious Recipes:</a></strong> Discover easy ways to incorporate moringa into your meals, from <a href="/recipes/evergreen/how-to-make-moringa-tea-at-home">Moringa Tea</a> to <a href="/recipes/general/filipino-moringa-fish-soup-recipe">Filipino Fish Soup</a>.</li>
+                <li><strong><a href="/resources/"><i class="fas fa-external-link-alt"></i> Comprehensive Guides:</a></strong> Explore our guides for growing and using moringa, including <a href="/blog/evergreen/how-to-make-moringa-powder-at-home">how to make moringa powder</a>.</li>
             </ul>
         </section>
 
@@ -142,31 +144,40 @@
             </div>
         </section>
 
+        <section id="our-mission" class="my-5 text-center" style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px;">
+             <h2>Our Mission & Expertise</h2>
+             <!-- <img src="/images/founder-photo.jpg" alt="Jane Doe, Founder of Moringa Education" style="width:150px; height:150px; border-radius:50%; margin-bottom: 1rem;"> -->
+             <!-- INTERNAL LINKS -->
+             <p><strong>Moringa Education was founded by Lee Hayes, a passionate public health advocate.</strong> Our team are dedicated to providing 
+                <a href="/faq/faq">evidence-based, accessible information</a> about Moringa to help 
+                <a href="/blog/evergreen/how-to-get-kids-to-eat-moringa">families</a> worldwide improve their health and build a more sustainable future. All our health-related content is reviewed for accuracy.</p>
+             <a href="/about/" class="btn-moringa-green">Learn More About Our Story</a>
+        </section>
+
         <section id="moringa-benefits" class="my-5">
             <h2>Key Health Benefits of Moringa</h2>
-            <p>Moringa is packed with essential nutrients and antioxidants, making it a powerful superfood. Here are just a few of its benefits:</p>
+            <!-- INTERNAL LINKS -->
+            <p>Moringa is packed with essential <a href="/moringa-nutrition-calculator">vitamins, minerals, and antioxidants</a>, making it one of the <a href="/blog/evergreen/best-cheap-superfoods-for-families">best affordable superfoods</a>. Here are just a few of its benefits:</p>
             <ul>
                 <li>Rich in vitamins and minerals</li>
-                <li>Supports a healthy immune system</li>
-                <li>May help regulate blood sugar levels <a href="/blog/general/moringa-for-diabetes-control-lower-blood-sugar">Learn more</a></li>
-                <li>Promotes healthy skin and hair</li>
+                <li>Supports a <a href="/recipes/general/immune-boosting-moringa-juice-recipe">healthy immune system</a></li>
+                <li>May help regulate blood sugar levels <a href="/blog/general/moringa-for-diabetes-control-lower-blood-sugar">(Learn more)</a></li>
+                <li>Promotes <a href="/recipes/general/moringa-juice-for-glowing-skin-strong-immunity">healthy skin and hair</a></li>
                 <li>Contains anti-inflammatory compounds</li>
             </ul>
         </section>
 
         <section id="call-to-action" class="text-center my-5">
-            <h2>Ready to Unlock the Power of Moringa?</h2>
-            <p>Join our community and discover how Moringa can transform your health and support sustainable living. Get expert tips, delicious recipes, and helpful resources.</p>
-            <a href="/contact/" class="btn-moringa-green">Get Started with Moringa Education Today!</a>
+            <h2>Ready to Transform Your Health?</h2>
+            <p>Join our community to get expert tips, delicious recipes, and helpful resources on how Moringa can support your well-being and sustainable living.</p>
+            <!-- INTERNAL LINK: Pointing to a budget-friendly, actionable plan is a great CTA alternative -->
+            <a href="/blog/evergreen/7-day-budget-meal-plan-moringa-cheap-healthy-recipes" class="btn-moringa-green">See Our 7-Day Moringa Meal Plan!</a>
         </section>
 
-        <main class="container">
-            <!-- Newsletter Signup Section -->
-            <section id="newsletter-signup" class="my-5 text-center">
-                <!-- MailerLite Embed Code -->
-                <div id="mailerlite-form-container" class="ml-embedded" data-form="0fLFWo"></div>
-            </section>
-        </main>
+        <section id="newsletter-signup" class="my-5 text-center">
+            <h3>Subscribe to Our Newsletter</h3>
+            <div id="mailerlite-form-container" class="ml-embedded" data-form="0fLFWo"></div>
+        </section>
         
     </main>
 
@@ -192,10 +203,10 @@
 
         <p>© 2024 Moringa Education. All rights reserved.</p>
 
-        <p>The content on this website is for informational purposes only and is not a substitute for professional medical advice. Always consult a healthcare provider for medical concerns.</p>
+        <p><strong>Disclaimer:</strong> The content on this website is for informational purposes only and is not a substitute for professional medical advice. Always consult a healthcare provider for medical concerns.</p>
     </footer>
 
-    <!-- Scripts are deferred, which is good practice -->
+    <!-- Scripts section is well-optimized with defer. No changes needed. -->
     <script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
@@ -213,6 +224,6 @@
           n.parentNode.insertBefore(l,n);
         })(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
         ml('account', '1410691');
-      </script>
+    </script>
 </body>
 </html>
