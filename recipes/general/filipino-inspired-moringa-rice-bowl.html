@@ -15,28 +15,36 @@
   <link rel="canonical" href="https://moringaeducation.org/recipes/general/filipino-inspired-moringa-rice-bowl">
   <title>Filipino-Inspired Moringa Rice Bowl (UK-Friendly) - Moringa Education</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" media="print" onload="this.media='all'">
-    <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="/css/cleaned.css">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+  <link rel="preload" href="/css/cleaned.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/cleaned.css"></noscript>
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "Recipe",
-      "name": "Filipino-Inspired Moringa Rice Bowl (UK-Friendly)",
-      "image": "https://www.moringaeducation.org/recipes/images/filipino-inspired-moringa-rice-bowl-recipe-uk.webp", // Updated Image Path
+      "name": "Easy Filipino-Inspired Moringa Rice Bowl (UK-Friendly)",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.moringaeducation.org/recipes/images/filipino-inspired-moringa-rice-bowl-recipe-uk.webp",
+        "height": 800,
+        "width": 1200
+      },
       "author": {
         "@type": "Organization",
         "name": "Moringa Education"
       },
-      "datePublished": "2025-04-11", // Updated Publication Date
+      "datePublished": "2025-04-11",
       "description": "A wholesome, affordable, and flavourful Filipino-inspired rice bowl featuring nutrient-rich moringa (malunggay), adaptable with UK supermarket ingredients. A great way to enjoy the benefits of moringa.",
       "prepTime": "PT15M",
       "cookTime": "PT25M",
       "totalTime": "PT40M",
       "recipeYield": "2-3 servings",
       "recipeCategory": "Main Dish",
-      "recipeCuisine": "Filipino-Inspired, Healthy",
+      "recipeCuisine": "Filipino",
       "keywords": "Filipino Moringa Rice Bowl, moringa recipe, malunggay recipe, healthy Filipino recipe, budget friendly meal, moringa benefits, UK recipe, vegetable rice bowl",
       "recipeIngredient": [
         "1 cup uncooked jasmine or basmati rice",
@@ -53,48 +61,67 @@
         "1 tbsp apple cider vinegar or white vinegar",
         "1 tsp brown sugar (optional)",
         "Salt and pepper to taste",
-        "Optional: 1 cup cooked chickpeas or tofu cubes (vegan)",
-        "Optional: 1–2 cooked chicken thighs, shredded",
+        "1 cup cooked chickpeas or tofu cubes (for vegan option)",
+        "1–2 cooked chicken thighs, shredded (for non-vegan option)",
         "Optional Topping: 1 fried or soft-boiled egg per bowl",
         "Optional Topping: Spring onions, chopped",
         "Optional Topping: Toasted sesame seeds or crushed peanuts",
         "Optional Topping: Lime wedge or calamansi juice"
       ],
       "recipeInstructions": [
-        {
-          "@type": "HowToStep",
-          "name": "Cook Rice",
-          "text": "Rinse and cook rice according to package instructions with a pinch of salt. Set aside and keep warm."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Sauté Aromatics & Veggies",
-          "text": "In a large pan or wok, heat the cooking oil over medium-high heat. Add minced garlic and chopped onion, cooking until fragrant and lightly golden (about 1-2 minutes)."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Stir-fry Vegetables",
-          "text": "Add the carrots, courgette, and mushrooms to the pan. Stir-fry for 3–5 minutes until the vegetables are tender-crisp."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Add Protein & Flavour",
-          "text": "If using, add your chosen cooked protein (chickpeas, tofu, or chicken). Pour in the soy sauce, vinegar, and optional brown sugar. Stir everything together and let it simmer for 1–2 minutes, allowing the flavours to meld."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Add Moringa & Finish",
-          "text": "Add the sliced red bell pepper and the fresh/frozen moringa leaves (or stir in dried moringa powder). Cook for another 1-2 minutes, just until the moringa leaves wilt and the bell pepper is slightly softened but still vibrant. Season with salt and pepper to your taste."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Build Your Bowl",
-          "text": "Divide the cooked rice among bowls. Top generously with the vegetable and moringa mixture. Add optional toppings like a fried/boiled egg, chopped spring onions, toasted seeds/nuts, and a squeeze of lime or calamansi juice."
+        { "@type": "HowToStep", "name": "Cook Rice", "text": "Rinse and cook rice according to package instructions with a pinch of salt. Set aside and keep warm." },
+        { "@type": "HowToStep", "name": "Sauté Aromatics", "text": "In a large pan or wok, heat the cooking oil over medium-high heat. Add minced garlic and chopped onion, cooking until fragrant and lightly golden (about 1-2 minutes)." },
+        { "@type": "HowToStep", "name": "Stir-fry Vegetables", "text": "Add the carrots, courgette, and mushrooms to the pan. Stir-fry for 3–5 minutes until the vegetables are tender-crisp." },
+        { "@type": "HowToStep", "name": "Add Protein & Flavour", "text": "If using, add your chosen cooked protein (chickpeas, tofu, or chicken). Pour in the soy sauce, vinegar, and optional brown sugar. Stir everything together and let it simmer for 1–2 minutes." },
+        { "@type": "HowToStep", "name": "Add Moringa & Finish", "text": "Add the sliced red bell pepper and the fresh/frozen moringa leaves (or stir in dried moringa powder). Cook for another 1-2 minutes, just until the moringa leaves wilt. Season with salt and pepper." },
+        { "@type": "HowToStep", "name": "Build Your Bowl", "text": "Divide the cooked rice among bowls. Top generously with the vegetable and moringa mixture. Garnish with optional toppings like a fried egg, spring onions, and a squeeze of lime." }
+      ],
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "450 kcal",
+        "servingSize": "1 bowl",
+        "fatContent": "15 g",
+        "proteinContent": "20 g",
+        "carbohydrateContent": "60 g"
+      },
+      "video": {
+        "@type": "VideoObject",
+        "name": "How to Make a Filipino-Inspired Moringa Rice Bowl",
+        "description": "Watch this step-by-step video to create a delicious and healthy moringa rice bowl using easy-to-find ingredients.",
+        "thumbnailUrl": "https://img.youtube.com/vi/WXOCKYtnsZ8/hqdefault.jpg",
+        "uploadDate": "2025-04-11",
+        "contentUrl": "https://www.youtube.com/watch?v=WXOCKYtnsZ8",
+        "embedUrl": "https://www.youtube.com/embed/WXOCKYtnsZ8"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What does moringa taste like in this recipe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fresh moringa (malunggay) has a mild, slightly earthy taste similar to spinach or kale. When mixed into this flavourful rice bowl with soy sauce and vinegar, its taste is very subtle and blends in beautifully."
         }
-      ]
-      // Nutrition section removed from schema
+      },{
+        "@type": "Question",
+        "name": "Can I use frozen moringa leaves?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, frozen moringa leaves work perfectly in this recipe. Add them directly to the pan from frozen at the same step as you would fresh leaves. They will wilt in a minute or two."
+        }
+      },{
+        "@type": "Question",
+        "name": "How do I make this moringa rice bowl gluten-free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To make this recipe gluten-free, simply substitute the soy sauce with a gluten-free tamari or coconut aminos. All other ingredients are naturally gluten-free."
+        }
+      }]
     }
-    </script>
+  ]
+}
+</script>
 </head>
 <body>
     <!-- Top Navigation -->
@@ -127,6 +154,16 @@
             <img class="video-thumbnail" src="https://img.youtube.com/vi/WXOCKYtnsZ8/hqdefault.jpg" alt="Filipino-Inspired Moringa Rice Bowl Video Tutorial"> <!-- Updated Video ID & Title -->
             <span class="play-button"><i class="fas fa-play"></i></span>
         </div>
+      </section>
+
+      <section class="equipment">
+        <h2>Equipment Needed</h2>
+        <ul>
+          <li>Large pan or wok</li>
+          <li>Rice cooker or pot</li>
+          <li>Knife and cutting board</li>
+          <li>Measuring cups and spoons</li>
+        </ul>
       </section>
 
       <!-- Ingredients Section -->
@@ -183,12 +220,10 @@
         </ol>
       </section>
 
-      <!-- Why Add Moringa? Section -->
       <section class="recipe-notes">
-        <h2>Why Add Moringa?</h2>
-        <p><a href="/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree">Moringa (malunggay)</a> is a <a href="/blog/evergreen/10-surprising-benefits-of-moringa">superfood rich in iron, calcium, vitamins, and antioxidants</a> — and it grows abundantly in the Philippines. Adding it to this bowl significantly boosts its nutritional value. Discover more about its potential impact on <a href="/blog/evergreen/how-moringa-can-help-with-malnutrition-and-poverty">malnutrition and poverty</a>.</p>
+        <h2>Why Add Moringa to Your Rice Bowl?</h2>
+        <p><a href="/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree">Moringa (malunggay)</a> is a <a href="/blog/evergreen/10-surprising-benefits-of-moringa">superfood rich in iron, calcium, vitamins, and antioxidants</a>. Adding it to this bowl significantly boosts its nutritional value without changing the delicious Filipino-inspired flavors.</p>
         <p>If you're new to moringa, explore <a href="/blog/evergreen/moringa-easy-ways-to-add-to-diet">easy ways to add it to your diet</a> or learn <a href="/recipes/evergreen/how-to-make-moringa-tea-at-home">how to make moringa tea</a>.</p>
-        <p><strong>Want more healthy, plant-powered recipes?</strong> Try our <a href="/recipes/evergreen/basic-moringa-soup-recipe">Basic Moringa Soup</a> or refreshing <a href="/recipes/evergreen/pure-moringa-juice-recipe">Pure Moringa Juice Recipe</a>.</p>
       </section>
 
       <!-- Storage Section -->
@@ -208,7 +243,19 @@
         </ul>
       </section>
 
-      <!-- Nutrition Info Section Removed -->
+      <section id="recipe-faq" class="recipe-notes">
+        <h2>Frequently Asked Questions</h2>
+        <dl>
+          <dt><strong>What does moringa taste like in this recipe?</strong></dt>
+          <dd>Fresh moringa (malunggay) has a mild, slightly earthy taste similar to spinach or kale. When mixed into this flavourful rice bowl with soy sauce and vinegar, its taste is very subtle and blends in beautifully.</dd>
+
+          <dt><strong>Can I use frozen moringa leaves?</strong></dt>
+          <dd>Yes, frozen moringa leaves work perfectly in this recipe. Add them directly to the pan from frozen at the same step as you would fresh leaves. They will wilt in a minute or two.</dd>
+
+          <dt><strong>How do I make this moringa rice bowl gluten-free?</strong></dt>
+          <dd>To make this recipe gluten-free, simply substitute the soy sauce with a gluten-free tamari or coconut aminos. All other ingredients are naturally gluten-free.</dd>
+        </dl>
+      </section>
 
       <!-- Call to Action -->
       <div class="cta">
