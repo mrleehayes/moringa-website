@@ -19,26 +19,26 @@
 <url>
   <loc>https://moringaeducation.org/recipes/recipes</loc>
   <lastmod>2025-03-15T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/contact/</loc>
   <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/about/</loc>
   <lastmod>2025-04-06T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/blog/</loc>
   <lastmod>2025-03-15T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/resources/</loc>
@@ -49,61 +49,61 @@
 <url>
   <loc>https://moringaeducation.org/blog/evergreen/what-is-moringa-fact-packed-guide-miracle-tree</loc>
   <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/recipes/evergreen/basic-moringa-soup-recipe</loc>
   <lastmod>2025-05-14T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/blog/evergreen/10-surprising-benefits-of-moringa</loc>
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/blog/evergreen/how-moringa-can-help-with-malnutrition-and-poverty</loc>
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/recipes/evergreen/pure-moringa-juice-recipe</loc>
     <lastmod>2025-05-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/recipes/evergreen/how-to-make-moringa-tea-at-home</loc>
     <lastmod>2025-05-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/blog/evergreen/moringa-easy-ways-to-add-to-diet</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/blog/evergreen/moringa-local-names-benefits</loc>
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/recipes/general/filipino-moringa-fish-soup-recipe</loc>
     <lastmod>2025-05-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/recipes/general/moringa-juice-for-glowing-skin-strong-immunity</loc>
     <lastmod>2025-05-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
@@ -133,13 +133,13 @@
 <url>
     <loc>https://moringaeducation.org/blog/evergreen/how-to-make-moringa-powder-at-home</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/blog/evergreen/moringa-affordable-uses-water-fertilizer-income</loc>
   <lastmod>2025-06-14T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
   <image:image>
         <image:loc>https://moringaeducation.org/blog/images/moringa-uses-health-beauty-wellness-industrial.webp</image:loc>
@@ -155,50 +155,50 @@
 <url>
     <loc>https://moringaeducation.org/blog/general/moringa-for-diabetes-control-lower-blood-sugar</loc>
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/blog/evergreen/best-cheap-superfoods-for-families</loc>
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/blog/evergreen/how-to-grow-moringa</loc>
   <lastmod>2025-06-25T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/blog/evergreen/how-to-get-kids-to-eat-moringa</loc>
   <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/blog/evergreen/7-day-budget-meal-plan-moringa-cheap-healthy-recipes</loc>
   <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/recipes/general/immune-boosting-moringa-juice-recipe</loc>
-    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-06-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/recipes/general/moringa-smoothie-for-energy-no-banana</loc>
   <lastmod>2025-04-09T00:00:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
+  <priority>0.7</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/recipes/general/filipino-inspired-moringa-rice-bowl</loc>
   <lastmod>2025-06-18T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
   <image:image>
       <image:loc>https://moringaeducation.org/recipes/images/filipino-inspired-moringa-rice-bowl-recipe-uk.webp</image:loc>
       <image:title>Filipino-Inspired Moringa Rice Bowl (UK-Friendly)</image:title>
@@ -207,19 +207,19 @@
 <url>
     <loc>https://moringaeducation.org/recipes/general/moringa-scrambled-eggs-on-toast-recipe</loc>
     <lastmod>2025-04-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
 </url>
 <url>
   <loc>https://moringaeducation.org/recipes/evergreen/moringa-halloumi-masala-recipe</loc>
   <lastmod>2025-04-30T00:00:00+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
 </url>
 <url>
     <loc>https://moringaeducation.org/recipes/evergreen/moringa-leaf-bread-recipe</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod> 
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
